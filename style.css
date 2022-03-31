@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14.05px;
+    color: #212121;
+}
+.espacio{
+    padding-top: 1.5em;
+}
+.centrado{
+    text-align: center;
+}
+.color{
+    color: white;
+}
+body{
+    background-image: url(/Multimedia/Images/Colored\ Shapes.svg);
+}
+.header-container{
+    width: 95%;
+    display: flex;
+    margin-left: 2em;
+    color: white;
+    background-color: #ff6961;
+    border-radius: 1em;
+    padding-bottom: 1em;
+    flex-wrap: wrap;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.7em;
+    flex-wrap: wrap
+}
+a{
+    text-decoration: none;
+    color: #212121;
+}
+.header2{
+    margin-top: 0.7em;
+    display: flex;
+    justify-content: space-around;
+}
+.login{
+    width: 5em;
+}
+.carrusel{
+    border: solid 2px #212121;
+}
+.beneficios{
+    background-color: #EDEDED;
+    padding: 1em;
+    border-radius: 2em;
+}
+.h2-container{
+    display: flex;
+    justify-content: center;
+}
+.h2{
+    padding: 0.5em;
+}
+.cachorros{
+    background-color: #fdfd96;
+    padding: 5em 5em 5em 5em;
+    border-radius: 1em;
+}
+.productos{
+    background-color: #84b6f4;
+    padding: 5em 5em 5em 5em;
+    border-radius: 1em;
+}
+.contenido{
+    display: flex;
+
+}
+ul li{
+    list-style: none;
+}
+.card:hover{
+    border: #77dd77 0.2em solid;
+}
+.img{
+    width: 10em;
+    height: 10em;
+}
+.border{
+    border-radius: 2em;
+}
+
+/*footer*/
+footer{
+    width: 95%;
+    margin-left: 2em;
+    display: flex;
+    margin-top: 5em;
+    margin-bottom: 2em;
+    background-color: #fdcae1;
+    border-radius: 1em;
+    justify-content: center;
+    padding-top: 1em;
+}
+.redes{
+    display: flex;
+    justify-content: space-around;
+}
+.Copyright{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    margin-bottom: 0%;
+    margin-left: 7em;
+}
+
+.bot{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 6em;
+}
