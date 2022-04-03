@@ -91,7 +91,7 @@
         </nav>
         <!--fin segundo menu-->
     </header>
-    <section>
+    <section class="contacto">
         <form class="form-container">
             <div class="form-h1-container">
                 <h1 class="form-h1">
@@ -99,27 +99,38 @@
                 </h1>
             </div>
             <div class="text-area-container">
+                
                 <div class="text-area">
-                    <p>Dejanos tu pregunta perri amig@</p>
-                    <label for="Text-area"></label>
-                    <textarea name="Text-area" id="Text-area"></textarea>
+                    <div>  
+                        <h4 class="titulo">Dejanos tu pregunta perri amigX</h4>
+                    </div>
+                    <div class="txt">
+                        <label for="Text-area"></label>
+                        <textarea name="Text-area" id="Text-area" placeholder="Deja tu pregunta aqui"></textarea>
+                    </div>
                 </div>
             </div>
             <div class="datos-container">
                 <div class="datos">
-                    <!--Nombre completo-->
-                    <label for="nombre">Nombre Completo</label>
-                    <input type="nombre" id="nombre" placeholder="Nombre + apellido" name="nombre" required>
-                    <!--fin nombre completo-->
-                    <!--email-->
-                    <label for="email">email</label>
-                    <input type="email" id="email" placeholder="Ej: xxxxxx@xxx.com" name="email" required>
-                    <!-- fin email-->
+                    <ul class="datos-form">
+                        <li>
+                            <!--Nombre completo-->
+                            <label for="nombre">Nombre</label>
+                            <input type="nombre" id="nombre" placeholder="Nombre + apellido" name="nombre" required class="nombre">
+                            <!--fin nombre completo-->
+                        </li>
+                        <li>
+                            <!--email-->
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Ej: xxxxxx@xxx.com" name="email" required class="email">
+                            <!-- fin email-->
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="btn-container">
-                <Div class="btm">
-                    <button type="button" class="btn btn-outline-danger">Enviar</button>
+                <Div class="btm1">
+                    <button type="button" class="btn btn-danger">Enviar</button>
                 </Div>
             </div>
         </form>
