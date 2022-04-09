@@ -209,3 +209,32 @@ width: 60%;
 .btm1{
 margin-top: 1.5em;
 }
+/* Fin estilos del formulario*/
+/* Estilos de nosotros.html*/
+.titulo-container{
+    background-color: #fdfd96;
+    opacity: 0.8;
+    border-radius: 2em;
+}
+.titulo{
+    margin-top: 0.2em;
+    border: solid 3px #77dd77;
+    border-radius: 1em;
+}
+.historia-container{
+    background-color: #77dd77;
+    opacity: 0.8;
+    border-radius: 2em;
+    padding: 0.7em;
+}
+.historia{
+    margin-top: 0.2em;
+    border: solid 3px #fdfd96;
+    border-radius: 1em;
+}
+.texto-historia{
+    margin-top: 1em;
+}
+
+
+/* Fin Estilos de nosotros.html*/
