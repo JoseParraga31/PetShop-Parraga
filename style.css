@@ -78,7 +78,7 @@ a{
 ul li{
     list-style: none;
 }
-.card:hover{
+.carta1:hover{
     border: #77dd77 0.2em solid;
 }
 .img{
@@ -144,6 +144,8 @@ footer{
     justify-content: center;
     border-radius: 1em;
     background-color: #EDEDED;
+    border: solid 2px;
+    opacity: 0.8;
     flex-wrap: wrap;
 }
 .text-area-container{
@@ -152,6 +154,7 @@ footer{
     justify-content: center;
     width: 60%;
     background: #77dd77;
+    border: solid 2px;
     opacity: 0.8;
     border-radius: 2em; 
     flex-wrap: wrap;  
@@ -159,7 +162,7 @@ footer{
 .text-area{
 width: 60%;
 }
-.titulo{
+.titulo1{
     display: flex;
     justify-content: center;
 }
@@ -181,6 +184,7 @@ width: 60%;
     display: flex;
     border-radius: 2em;
     background-color: #ff6961;
+    border: solid 2px;
     opacity: 0.8;
     justify-content: center;
 }
@@ -202,6 +206,7 @@ width: 60%;
     width: 15%;
     border-radius: 1em;
     background-color: #fdfd96;
+    border: solid 2px;
     opacity: 0.8;
     display: flex;
     justify-content: center;
@@ -212,29 +217,62 @@ margin-top: 1.5em;
 /* Fin estilos del formulario*/
 /* Estilos de nosotros.html*/
 .titulo-container{
-    background-color: #fdfd96;
+    background-color: #EDEDED;
+    border: solid 2px;
     opacity: 0.8;
     border-radius: 2em;
 }
 .titulo{
     margin-top: 0.2em;
-    border: solid 3px #77dd77;
     border-radius: 1em;
 }
 .historia-container{
     background-color: #77dd77;
+    border: solid 2px;
     opacity: 0.8;
     border-radius: 2em;
     padding: 0.7em;
 }
 .historia{
     margin-top: 0.2em;
-    border: solid 3px #fdfd96;
     border-radius: 1em;
 }
 .texto-historia{
     margin-top: 1em;
 }
-
+.txt-como-somos{
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.como-somos-container{
+    background-color: #fdfd96;
+    border: solid 2px;
+    opacity: 0.8;
+    border-radius: 2em;
+}
+.nuestro-objetivo-container{
+    padding: 3em;
+    background-color: #fdcae1;
+    border: solid 2px;
+    opacity: 0.8;
+    border-radius: 2em;
+}
+.container-valor{
+    background-color: #84b6f4;
+    opacity: 0.8;
+    border-radius: 2em;
+    padding-bottom: 3em;
+    margin-top: 2em;
+}
+.foto-familia{
+    width: 80%;
+    
+}
+.textos-valor{
+margin-left: 2em;
+}
+.txt-valor{
+    border-bottom: solid 2px;
+}
 
 /* Fin Estilos de nosotros.html*/
