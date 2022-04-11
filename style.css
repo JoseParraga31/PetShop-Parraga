@@ -237,6 +237,10 @@ margin-top: 1.5em;
     margin-top: 0.2em;
     border-radius: 1em;
 }
+.img-historia{
+    width: 50%;
+    border-radius: 2em;
+}
 .texto-historia{
     margin-top: 1em;
 }
@@ -257,22 +261,21 @@ margin-top: 1.5em;
     opacity: 0.8;
     border-radius: 2em;
 }
-.container-valor{
+.Contenido-valor{
     background-color: #84b6f4;
+    border: solid 2px;
     opacity: 0.8;
     border-radius: 2em;
-    padding-bottom: 3em;
+    padding-bottom: 1.5em;
     margin-top: 2em;
 }
-.foto-familia{
-    width: 80%;
-    
+.img-familia{
+    width: 90%;
+    border-radius: 2em;
+    margin-left: 0.7em;
 }
-.textos-valor{
-margin-left: 2em;
-}
-.txt-valor{
+.contenido-valor{
+    padding-bottom: 2em;
     border-bottom: solid 2px;
 }
-
 /* Fin Estilos de nosotros.html*/
