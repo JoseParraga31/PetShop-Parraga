@@ -15,7 +15,8 @@
     color: white;
 }
 body{
-    background-image: url(/Multimedia/Images/Colored\ Shapes.svg);
+    background: url(/Multimedia/Images/fondo.png);
+    background-size: cover;
 }
 .header-container{
     min-height: 10%;
