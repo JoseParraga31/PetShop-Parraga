@@ -16,7 +16,6 @@
 }
 body{
     background: url(/Multimedia/Images/fondo.png);
-    background-size: cover;
 }
 .header-container{
     min-height: 10%;
