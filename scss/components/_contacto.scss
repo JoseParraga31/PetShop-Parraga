@@ -60,49 +60,44 @@
                 } 
             }
         }
+        .datos-container{
+            grid-area: datos-container;
+            width: 60%;
+            display: flex;
+            border-radius: 2em;
+            background-color: #ff6961;
+            border: solid 2px;
+            opacity: 0.8;
+            justify-content: center;
+            
+            .datos{
+                width: 100%;
+                justify-content: space-around;
+        
+                .datos-form{
+                    width: 100%;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 1.6em;
+                    flex-wrap: wrap;
+                }
+                
+            }
+        }
+        .btn-container{
+            grid-area: btn-container;
+            width: 15%;
+            border-radius: 1em;
+            background-color: #fdfd96;
+            border: solid 2px;
+            opacity: 0.8;
+            display: flex;
+            justify-content: center;
+
+            .btm1{
+                margin-top: 1.5em;
+                }
+        } 
     }
 }
-
-
-
-
-
-.datos-container{
-    grid-area: datos-container;
-    width: 60%;
-    display: flex;
-    border-radius: 2em;
-    background-color: #ff6961;
-    border: solid 2px;
-    opacity: 0.8;
-    justify-content: center;
-    
-    .datos{
-        width: 100%;
-        justify-content: space-around;
-    }
-}
-
-.datos-form{
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    padding: 1.6em;
-    flex-wrap: wrap;
-}
-
-.btn-container{
-    grid-area: btn-container;
-    width: 15%;
-    border-radius: 1em;
-    background-color: #fdfd96;
-    border: solid 2px;
-    opacity: 0.8;
-    display: flex;
-    justify-content: center;
-} 
-.btm1{
-margin-top: 1.5em;
-}
-/* Fin estilos del formulario*/
