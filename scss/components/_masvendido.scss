@@ -1,0 +1,21 @@
+.productos{
+    background-color: #84b6f4;
+    padding: 5em 5em 5em 5em;
+    border-radius: 2em;
+
+    .contenido{
+        display: flex;
+        ul li{
+            list-style: none;
+        }
+    }
+    .carta1{
+        &:hover{
+            border: #77dd77 0.2em solid;
+        } 
+    }
+}
+.img{
+    width: 10em;
+    height: 10em;
+}

@@ -1,0 +1,21 @@
+.h2-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5em;
+
+    .h2{
+        padding: 0.5em;
+    }
+}
+
+.cachorros{
+    background-color: #fdfd96;
+    padding: 5em 5em 5em 5em;
+    border-radius: 2em;
+
+    .carta1{
+        &:hover{
+            border: #77dd77 0.2em solid;
+        }
+    }
+}

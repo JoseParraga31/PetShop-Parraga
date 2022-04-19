@@ -1,0 +1,32 @@
+/*footer*/
+footer{
+    min-height: 10%;
+    width: 95%;
+    margin-left: 2em;
+    display: flex;
+    margin-top: 5em;
+    margin-bottom: 2em;
+    background-color: #fdcae1;
+    border-radius: 1em;
+    justify-content: center;
+    padding-top: 1em;
+
+    .redes{
+        display: flex;
+        justify-content: space-around;
+    }
+    .Copyright{
+        display: flex;
+        justify-content: center;
+        margin-top: 3em;
+        margin-bottom: 0%;
+        margin-left: 7em;
+    }
+    .bot{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 6em;
+    }
+
+}
+

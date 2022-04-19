@@ -1,0 +1,108 @@
+/* estilos del formulario*/
+.contacto{
+    margin-top: 3em;
+    .form-container{
+        margin-top: 2em;
+        display: grid;
+        grid-template-areas: 
+        "form-h1-container form-h1-container form-h1-container form-h1-container"
+        "text-area-container text-area-container text-area-container text-area-container"
+        "datos-container datos-container datos-container datos-container"
+        "btn-container btn-container btn-container btn-container";
+        grid-template-rows: 5em 10em 5em 5em;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        row-gap: 2.5em;
+        flex-wrap: wrap;
+
+        .form-h1-container{
+            grid-area: form-h1-container;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            border-radius: 1em;
+            background-color: #EDEDED;
+            border: solid 2px;
+            opacity: 0.8;
+            flex-wrap: wrap;
+        }
+
+        .text-area-container{
+            grid-area: text-area-container;
+            display: flex;
+            justify-content: center;
+            width: 60%;
+            background: #77dd77;
+            border: solid 2px;
+            opacity: 0.8;
+            border-radius: 2em; 
+            flex-wrap: wrap;  
+        
+            .text-area{
+                width: 60%;
+
+                .titulo1{
+                    display: flex;
+                    justify-content: center;
+                } 
+                .txt{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    
+                    textarea{
+                        width: 100%;
+                        min-height: 6em;
+                        resize: none;
+                        border-radius: 0.5em;
+                        flex-wrap: wrap;
+                    }
+                } 
+            }
+        }
+    }
+}
+
+
+
+
+
+.datos-container{
+    grid-area: datos-container;
+    width: 60%;
+    display: flex;
+    border-radius: 2em;
+    background-color: #ff6961;
+    border: solid 2px;
+    opacity: 0.8;
+    justify-content: center;
+    
+    .datos{
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+.datos-form{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.6em;
+    flex-wrap: wrap;
+}
+
+.btn-container{
+    grid-area: btn-container;
+    width: 15%;
+    border-radius: 1em;
+    background-color: #fdfd96;
+    border: solid 2px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+} 
+.btm1{
+margin-top: 1.5em;
+}
+/* Fin estilos del formulario*/
