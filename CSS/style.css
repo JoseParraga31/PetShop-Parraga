@@ -12,24 +12,50 @@
 .navbar1 {
   background-color: #ff6961;
   border-radius: 2em;
-  padding: 1em;
 }
-
 /*componets/carrusel*/
+/*@media screen  and (max-width: 490px){
+    .beneficios-container{
+        width: 20% !important;
+        display: flex;
+        justify-content: flex-start;
+        padding: none !important;
+        margin-left: 0 !important;
+        .beneficios{
+            width: 100%;
+
+        }
+
+    } 
+}*/
 .carrusel {
   padding-top: 1.5em;
 }
 
 .beneficios-container {
+  width: 80%;
+  margin-left: 8em;
   padding-top: 1.5em;
 }
 .beneficios-container .beneficios {
+  width: 100%;
   background-color: #EDEDED;
-  padding: 1em;
   border-radius: 2em;
+}
+.beneficios-container .beneficios .icono-bene {
+  margin-top: 1em;
 }
 
 /*componets/cachorros*/
+@media screen and (max-width: 490px) {
+  .h2-container {
+    display: none !important;
+  }
+
+  .cachorros {
+    display: none !important;
+  }
+}
 .h2-container {
   display: flex;
   justify-content: center;
@@ -49,6 +75,54 @@
 }
 
 /*componets/masvendido*/
+@media screen and (max-width: 490px) {
+  .mobile-template {
+    display: flex;
+  }
+  .mobile-template .beneficios-container {
+    width: 20%;
+    margin-top: 4em;
+    margin-left: 0 !important;
+  }
+  .mobile-template .beneficios-container .beneficios {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  .mobile-template .cachorros-container {
+    display: none !important;
+  }
+  .mobile-template .productos-seccion {
+    width: 80%;
+  }
+  .mobile-template .productos-seccion .productos {
+    width: 100%;
+    background-color: #84b6f4;
+    padding: 1em 1em 1em 1em;
+    border-radius: 2em;
+  }
+  .mobile-template .productos-seccion .productos .contenido {
+    width: 100%;
+    display: flex;
+    margin-bottom: 0.5em;
+  }
+  .mobile-template .productos-seccion .productos .contenido ul li {
+    list-style: none;
+  }
+  .mobile-template .productos-seccion .productos .produ-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .mobile-template .productos-seccion .productos .img {
+    width: 5em;
+    height: 5em;
+  }
+}
+.h2-container-promo {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+
 .productos {
   background-color: #84b6f4;
   padding: 5em 5em 5em 5em;
