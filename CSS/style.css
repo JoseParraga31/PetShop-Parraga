@@ -9,25 +9,21 @@
 }
 
 /*componets/navbar*/
+@media screen and (max-width: 490px) {
+  .navbar1 {
+    margin-left: 0.5em;
+  }
+}
 .navbar1 {
   background-color: #ff6961;
   border-radius: 2em;
 }
 /*componets/carrusel*/
-/*@media screen  and (max-width: 490px){
-    .beneficios-container{
-        width: 20% !important;
-        display: flex;
-        justify-content: flex-start;
-        padding: none !important;
-        margin-left: 0 !important;
-        .beneficios{
-            width: 100%;
-
-        }
-
-    } 
-}*/
+@media screen and (max-width: 490px) {
+  .carrusel {
+    margin-left: 0.1em;
+  }
+}
 .carrusel {
   padding-top: 1.5em;
 }
@@ -82,7 +78,7 @@
   .mobile-template .beneficios-container {
     width: 20%;
     margin-top: 4em;
-    margin-left: 0 !important;
+    margin-left: 3em !important;
   }
   .mobile-template .beneficios-container .beneficios {
     padding-top: 3em;
@@ -147,13 +143,12 @@
 /*footer*/
 footer {
   min-height: 10%;
-  width: 95%;
-  margin-left: 2em;
+  width: 100%;
   display: flex;
-  margin-top: 5em;
+  margin-top: 2em;
   margin-bottom: 2em;
   background-color: #fdcae1;
-  border-radius: 1em;
+  border-radius: 2em;
   justify-content: center;
   padding-top: 1em;
 }
