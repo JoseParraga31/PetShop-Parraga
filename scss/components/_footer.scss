@@ -6,7 +6,7 @@ footer{
     margin-top: 2em;
     margin-bottom: 2em;
     background-color: #fdcae1;
-    border-radius: 2em;
+    border-radius: map-get(borders,borders-radious-standar);
     justify-content: center;
     padding-top: 1em;
 

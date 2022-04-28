@@ -19,7 +19,7 @@
 .cachorros{
     background-color: #fdfd96;
     padding: 5em 5em 5em 5em;
-    border-radius: 2em;
+    border-radius: map-get(borders,borders-radious-standar);
 
     .carta1{
         &:hover{

@@ -15,7 +15,7 @@
     .beneficios{
         width: 100%;
         background-color: #EDEDED;
-        border-radius: 2em;
+        border-radius: map-get(borders,borders-radious-standar);
         .icono-bene{
             margin-top: 1em;
         }

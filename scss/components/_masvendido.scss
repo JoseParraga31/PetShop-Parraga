@@ -21,7 +21,7 @@
                 width: 100%;
                 background-color: #84b6f4;
                 padding: 1em 1em 1em 1em;
-                border-radius: 2em;
+                border-radius: map-get(borders,borders-radious-standar);
                 .contenido{
                     width: 100%;
                     display: flex;
@@ -52,7 +52,7 @@
 .productos{
     background-color: #84b6f4;
     padding: 5em 5em 5em 5em;
-    border-radius: 2em;
+    border-radius: map-get(borders,borders-radious-standar);
 
     .contenido{
         display: flex;
