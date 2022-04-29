@@ -1,28 +1,29 @@
+@import "../base/mapas";
 .titulo-container{
     background-color: #EDEDED;
-    border: map-get(borders,border-standar);
+    border: map-get($borders-standard,borders);
     opacity: 0.8;
-    border-radius: map-get(borders,borders-radious-standar);
+    border-radius: map-get($borders-standard,borders-radious);
     margin-top: 1.5em;
 }
 .titulo{
     margin-top: 0.2em;
-    border-radius: map-get(borders,borders-radious-standar);
+    border-radius: map-get($borders-standard,borders-radious);
 }
 .historia-container{
     background-color: #77dd77;
-    border:map-get(borders,border-standar);
+    border:map-get($borders-standard,borders);
     opacity: 0.8;
-    border-radius: map-get(borders,borders-radious-standar);
+    border-radius: map-get($borders-standard,borders-radious);
     padding: 0.7em;
 }
 .historia{
     margin-top: 0.2em;
-    border-radius: map-get(borders,borders-radious-standar);
+    border-radius: map-get($borders-standard,borders-radious);
 }
 .img-historia{
     width: 50%;
-    border-radius: map-get(borders,borders-radious-standar);
+    border-radius: map-get($borders-standard,borders-radious);
 }
 .texto-historia{
     margin-top: 1em;
@@ -33,28 +34,28 @@
 }
 .como-somos-container{
     background-color: #fdfd96;
-    border: map-get(borders,border-standar);
+    border: map-get($borders-standard,borders);
     opacity: 0.8;
-    border-radius: map-get(borders,borders-radious-standar);
+    border-radius: map-get($borders-standard,borders-radious);
 }
 .nuestro-objetivo-container{
     padding: 3em;
     background-color: #fdcae1;
-    border: map-get(borders,border-standar);
+    border: map-get($borders-standard,borders);
     opacity: 0.8;
-    border-radius: map-get(borders,borders-radious-standar);
+    border-radius: map-get($borders-standard,borders-radious);
 }
 .Contenido-valor{
     background-color: #84b6f4;
-    border: map-get(borders,border-standar);
+    border: map-get($borders-standard,borders);
     opacity: 0.8;
-    border-radius:map-get(borders,borders-radious-standar);
-    margin-top: 2em;
+    border-radius:map-get($borders-standard,borders-radious);
+    @extend %espacio;
     border-bottom: solid 2px;
 }
 .img-familia{
     width: 90%;
-    border-radius: map-get(borders,borders-radious-standar);
+    border-radius: map-get($borders-standard,borders-radious);
     margin-left: 0.7em;
 }
 .contenido-valor{

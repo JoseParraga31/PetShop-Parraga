@@ -2,28 +2,25 @@
 footer{
     min-height: 10%;
     width: 100%;
-    display: flex;
-    margin-top: 2em;
+    @include Flexbox(flex,center);
+    @extend %espacio;
     margin-bottom: 2em;
     background-color: #fdcae1;
-    border-radius: map-get(borders,borders-radious-standar);
-    justify-content: center;
+    border-radius: map-get($borders-standard, borders-radious );
+    border: map-get($borders-standard,borders);
     padding-top: 1em;
 
     .redes{
-        display: flex;
-        justify-content: space-around;
+        @include Flexbox(flex,space-around);
     }
     .Copyright{
-        display: flex;
-        justify-content: center;
+        @include Flexbox(flex,center);
         margin-top: 3em;
         margin-bottom: 0%;
         margin-left: 7em;
     }
     .bot{
-        display: flex;
-        justify-content: flex-end;
+        @include Flexbox(flex,flex-end);
         margin-right: 6em;
     }
 

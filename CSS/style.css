@@ -12,6 +12,7 @@
 .navbar1 {
   background-color: #ff6961;
   border-radius: 2em;
+  border: 2px solid #212121;
 }
 
 /*componets/carrusel*/
@@ -20,8 +21,11 @@
     margin-left: 0.1em;
   }
 }
-.carrusel {
-  padding-top: 1.5em;
+.border-carrusel {
+  background-color: #77dd77;
+  border: 2px solid #212121;
+  border-radius: 2em;
+  padding: 3em;
 }
 
 .beneficios-container {
@@ -33,11 +37,8 @@
   width: 100%;
   background-color: #EDEDED;
   border-radius: 2em;
+  border: 2px solid #212121;
 }
-.beneficios-container .beneficios .icono-bene {
-  margin-top: 1em;
-}
-
 /*componets/cachorros*/
 @media screen and (max-width: 490px) {
   .h2-container {
@@ -59,8 +60,9 @@
 
 .cachorros {
   background-color: #fdfd96;
-  padding: 5em 5em 5em 5em;
+  padding: 3em 3em 3em 3em;
   border-radius: 2em;
+  border: 2px solid #212121;
 }
 .cachorros .carta1:hover {
   border: #77dd77 0.2em solid;
@@ -89,7 +91,7 @@
   .mobile-template .productos-seccion .productos {
     width: 100%;
     background-color: #84b6f4;
-    padding: 1em 1em 1em 1em;
+    padding: 3em 3em 3em 3em;
     border-radius: 2em;
   }
   .mobile-template .productos-seccion .productos .contenido {
@@ -112,13 +114,13 @@
 .h2-container-promo {
   display: flex;
   justify-content: center;
-  margin-top: 1.5em;
 }
 
 .productos {
   background-color: #84b6f4;
-  padding: 5em 5em 5em 5em;
+  padding: 3em 3em 3em 3em;
   border-radius: 2em;
+  border: 2px solid #212121;
 }
 .productos .contenido {
   display: flex;
@@ -141,11 +143,11 @@ footer {
   min-height: 10%;
   width: 100%;
   display: flex;
-  margin-top: 2em;
+  justify-content: center;
   margin-bottom: 2em;
   background-color: #fdcae1;
   border-radius: 2em;
-  justify-content: center;
+  border: 2px solid #212121;
   padding-top: 1em;
 }
 footer .redes {
@@ -168,7 +170,7 @@ footer .bot {
 /*componets/nosotros*/
 .titulo-container {
   background-color: #EDEDED;
-  border: solid 2px;
+  border: 2px solid #212121;
   opacity: 0.8;
   border-radius: 2em;
   margin-top: 1.5em;
@@ -176,12 +178,12 @@ footer .bot {
 
 .titulo {
   margin-top: 0.2em;
-  border-radius: 1em;
+  border-radius: 2em;
 }
 
 .historia-container {
   background-color: #77dd77;
-  border: solid 2px;
+  border: 2px solid #212121;
   opacity: 0.8;
   border-radius: 2em;
   padding: 0.7em;
@@ -189,7 +191,7 @@ footer .bot {
 
 .historia {
   margin-top: 0.2em;
-  border-radius: 1em;
+  border-radius: 2em;
 }
 
 .img-historia {
@@ -208,7 +210,7 @@ footer .bot {
 
 .como-somos-container {
   background-color: #fdfd96;
-  border: solid 2px;
+  border: 2px solid #212121;
   opacity: 0.8;
   border-radius: 2em;
 }
@@ -216,17 +218,16 @@ footer .bot {
 .nuestro-objetivo-container {
   padding: 3em;
   background-color: #fdcae1;
-  border: solid 2px;
+  border: 2px solid #212121;
   opacity: 0.8;
   border-radius: 2em;
 }
 
 .Contenido-valor {
   background-color: #84b6f4;
-  border: solid 2px;
+  border: 2px solid #212121;
   opacity: 0.8;
   border-radius: 2em;
-  margin-top: 2em;
   border-bottom: solid 2px;
 }
 
@@ -247,7 +248,6 @@ footer .bot {
   margin-top: 3em;
 }
 .contacto .form-container {
-  margin-top: 2em;
   display: grid;
   grid-template-areas: "form-h1-container form-h1-container form-h1-container form-h1-container" "text-area-container text-area-container text-area-container text-area-container" "datos-container datos-container datos-container datos-container" "btn-container btn-container btn-container btn-container";
   grid-template-rows: 5em 10em 5em 5em;
@@ -261,9 +261,9 @@ footer .bot {
   width: 80%;
   display: flex;
   justify-content: center;
-  border-radius: 1em;
+  border-radius: 2em;
   background-color: #EDEDED;
-  border: solid 2px;
+  border: 2px solid #212121;
   opacity: 0.8;
   flex-wrap: wrap;
 }
@@ -273,7 +273,7 @@ footer .bot {
   justify-content: center;
   width: 60%;
   background: #77dd77;
-  border: solid 2px;
+  border: 2px solid #212121;
   opacity: 0.8;
   border-radius: 2em;
   flex-wrap: wrap;
@@ -301,11 +301,11 @@ footer .bot {
   grid-area: datos-container;
   width: 60%;
   display: flex;
+  justify-content: center;
   border-radius: 2em;
   background-color: #ff6961;
-  border: solid 2px;
+  border: 2px solid #212121;
   opacity: 0.8;
-  justify-content: center;
 }
 .contacto .form-container .datos-container .datos {
   width: 100%;
@@ -324,12 +324,16 @@ footer .bot {
   width: 15%;
   border-radius: 1em;
   background-color: #fdfd96;
-  border: solid 2px;
+  border: 2px solid #212121;
   opacity: 0.8;
   display: flex;
   justify-content: center;
 }
 .contacto .form-container .btn-container .btm1 {
+  margin-top: 1.5em;
+}
+
+.carrusel, .beneficios-container .beneficios .icono-bene, .h2-container-promo, footer, .Contenido-valor, .contacto .form-container {
   margin-top: 1.5em;
 }
 
