@@ -337,4 +337,8 @@ footer .bot {
   margin-top: 1.5em;
 }
 
+body {
+  background-image: url(/src/Multimedia/Images/background.png);
+}
+
 /*# sourceMappingURL=style.css.map */
