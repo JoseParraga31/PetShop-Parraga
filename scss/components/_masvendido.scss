@@ -20,8 +20,8 @@
             .productos{
                 width: 100%;
                 background-color: #84b6f4;
-                padding: 1em 1em 1em 1em;
-                border-radius: 2em;
+                padding: 3em 3em 3em 3em;
+                border-radius: map-get($borders-standard, borders-radious );
                 .contenido{
                     width: 100%;
                     display: flex;
@@ -45,14 +45,14 @@
     
     
 .h2-container-promo{
-    display: flex;
-    justify-content: center;
-    margin-top: 1.5em;                                                                                                              
+    @include Flexbox(flex,center);
+    @extend %espacio;                                                                                                              
 }
 .productos{
     background-color: #84b6f4;
-    padding: 5em 5em 5em 5em;
-    border-radius: 2em;
+    padding: 3em 3em 3em 3em;
+    border-radius: map-get($borders-standard, borders-radious );
+    border: map-get($borders-standard,borders);
 
     .contenido{
         display: flex;

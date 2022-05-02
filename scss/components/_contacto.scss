@@ -2,7 +2,7 @@
 .contacto{
     margin-top: 3em;
     .form-container{
-        margin-top: 2em;
+        @extend %espacio;
         display: grid;
         grid-template-areas: 
         "form-h1-container form-h1-container form-h1-container form-h1-container"
@@ -18,37 +18,33 @@
         .form-h1-container{
             grid-area: form-h1-container;
             width: 80%;
-            display: flex;
-            justify-content: center;
-            border-radius: 2em;
+            @include Flexbox(flex,center);
+            border-radius: map-get($borders-standard,borders-radious);
             background-color: #EDEDED;
-            border: solid 2px;
+            border: map-get($borders-standard,borders);
             opacity: 0.8;
             flex-wrap: wrap;
         }
 
         .text-area-container{
             grid-area: text-area-container;
-            display: flex;
-            justify-content: center;
+            @include Flexbox(flex,center);
             width: 60%;
             background: #77dd77;
-            border: solid 2px;
+            border: map-get($borders-standard,borders);
             opacity: 0.8;
-            border-radius: 2em; 
+            border-radius: map-get($borders-standard,borders-radious); 
             flex-wrap: wrap;  
         
             .text-area{
                 width: 60%;
 
                 .titulo1{
-                    display: flex;
-                    justify-content: center;
+                    @include Flexbox(flex,center);
                 } 
                 .txt{
                     width: 100%;
-                    display: flex;
-                    justify-content: center;
+                    @include Flexbox(flex,center);
                     
                     textarea{
                         width: 100%;
@@ -63,12 +59,11 @@
         .datos-container{
             grid-area: datos-container;
             width: 60%;
-            display: flex;
-            border-radius: 2em;
+            @include Flexbox(flex,center);
+            border-radius: map-get($borders-standard,borders-radious);
             background-color: #ff6961;
-            border: solid 2px;
+            border: map-get($borders-standard,borders);
             opacity: 0.8;
-            justify-content: center;
             
             .datos{
                 width: 100%;
@@ -77,8 +72,7 @@
                 .datos-form{
                     width: 100%;
                     list-style: none;
-                    display: flex;
-                    justify-content: space-around;
+                    @include Flexbox(flex,space-around);
                     padding: 1.6em;
                     flex-wrap: wrap;
                 }
@@ -90,11 +84,9 @@
             width: 15%;
             border-radius: 1em;
             background-color: #fdfd96;
-            border: solid 2px;
+            border: map-get($borders-standard,borders);
             opacity: 0.8;
-            display: flex;
-            justify-content: center;
-
+            @include Flexbox(flex,center);
             .btm1{
                 margin-top: 1.5em;
                 }

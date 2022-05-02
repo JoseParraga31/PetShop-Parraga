@@ -1,11 +1,17 @@
 @media screen  and (max-width: 490px){
     .carrusel{
         margin-left: 0.1em;
+        
     } 
 }
-
+.border-carrusel{
+    background-color: #77dd77;
+    border: map-get($borders-standard,borders);
+    border-radius: map-get($borders-standard, borders-radious);
+    padding: 3em;
+}
 .carrusel{
-    padding-top: 1.5em;
+    @extend %espacio;
     
 }
 .beneficios-container{
@@ -15,9 +21,10 @@
     .beneficios{
         width: 100%;
         background-color: #EDEDED;
-        border-radius: 2em;
+        border-radius: map-get($borders-standard, borders-radious);
+        border: map-get($borders-standard,borders);
         .icono-bene{
-            margin-top: 1em;
+            @extend %espacio;
         }
         
     }

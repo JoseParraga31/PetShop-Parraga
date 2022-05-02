@@ -1,3 +1,4 @@
+@import"../base/mixins";
 @media screen  and (max-width: 490px){
     .h2-container{
         display: none !important;
@@ -7,8 +8,7 @@
     }
 }
 .h2-container{
-    display: flex;
-    justify-content: center;
+    @include Flexbox(flex,center);
     margin-top: 1.5em;
 
     .h2{
@@ -18,8 +18,9 @@
 
 .cachorros{
     background-color: #fdfd96;
-    padding: 5em 5em 5em 5em;
-    border-radius: 2em;
+    padding: 3em 3em 3em 3em;
+    border-radius: map-get($borders-standard, borders-radious );
+    border: map-get($borders-standard,borders);
 
     .carta1{
         &:hover{
