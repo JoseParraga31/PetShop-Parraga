@@ -1,0 +1,29 @@
+
+.titulo-tienda-container{
+    width: 80%;
+    @extend %espacio;
+    background-color: #EDEDED;
+    border-radius: map-get($borders-standard, borders-radious);
+    border: map-get($borders-standard,borders);
+
+    .titulo-tienda{
+        @include Flexbox(flex,center,none)
+    }
+}
+.Perro-container{
+    @extend %espacio;
+    @include Flexbox(flex,center,none);
+    background-color: #fdfd96;
+    padding: 2em;
+    border: map-get($borders-standard,borders);
+    border-radius: map-get($borders-standard,borders-radious);
+}
+
+.Gato-container{
+    margin-top: 4em;
+    @include Flexbox(flex,center,none);
+    background-color: #77dd77;
+    padding: 2em;
+    border: map-get($borders-standard,borders);
+    border-radius: map-get($borders-standard,borders-radious);
+}

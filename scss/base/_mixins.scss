@@ -1,4 +1,10 @@
-@mixin Flexbox($display, $justify) {
+@mixin Flexbox($display, $justify, $direction) {
     display: $display;
     justify-content: $justify;
+    flex-direction: $direction;
 };
+
+@mixin paddintop($top) {
+    padding-top: $top;
+    
+}

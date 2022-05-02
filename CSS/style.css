@@ -52,6 +52,7 @@
 .h2-container {
   display: flex;
   justify-content: center;
+  flex-direction: none;
   margin-top: 1.5em;
 }
 .h2-container .h2 {
@@ -114,6 +115,7 @@
 .h2-container-promo {
   display: flex;
   justify-content: center;
+  flex-direction: none;
 }
 
 .productos {
@@ -144,6 +146,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: none;
   margin-bottom: 2em;
   background-color: #fdcae1;
   border-radius: 2em;
@@ -153,10 +156,12 @@ footer {
 footer .redes {
   display: flex;
   justify-content: space-around;
+  flex-direction: none;
 }
 footer .Copyright {
   display: flex;
   justify-content: center;
+  flex-direction: none;
   margin-top: 3em;
   margin-bottom: 0%;
   margin-left: 7em;
@@ -164,6 +169,7 @@ footer .Copyright {
 footer .bot {
   display: flex;
   justify-content: flex-end;
+  flex-direction: none;
   margin-right: 6em;
 }
 
@@ -261,6 +267,7 @@ footer .bot {
   width: 80%;
   display: flex;
   justify-content: center;
+  flex-direction: none;
   border-radius: 2em;
   background-color: #EDEDED;
   border: 2px solid #212121;
@@ -271,6 +278,7 @@ footer .bot {
   grid-area: text-area-container;
   display: flex;
   justify-content: center;
+  flex-direction: none;
   width: 60%;
   background: #77dd77;
   border: 2px solid #212121;
@@ -284,11 +292,13 @@ footer .bot {
 .contacto .form-container .text-area-container .text-area .titulo1 {
   display: flex;
   justify-content: center;
+  flex-direction: none;
 }
 .contacto .form-container .text-area-container .text-area .txt {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: none;
 }
 .contacto .form-container .text-area-container .text-area .txt textarea {
   width: 100%;
@@ -302,6 +312,7 @@ footer .bot {
   width: 60%;
   display: flex;
   justify-content: center;
+  flex-direction: none;
   border-radius: 2em;
   background-color: #ff6961;
   border: 2px solid #212121;
@@ -309,13 +320,16 @@ footer .bot {
 }
 .contacto .form-container .datos-container .datos {
   width: 100%;
+  display: flex;
   justify-content: space-around;
+  flex-direction: none;
 }
 .contacto .form-container .datos-container .datos .datos-form {
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: space-around;
+  flex-direction: none;
   padding: 1.6em;
   flex-wrap: wrap;
 }
@@ -328,17 +342,106 @@ footer .bot {
   opacity: 0.8;
   display: flex;
   justify-content: center;
+  flex-direction: none;
 }
 .contacto .form-container .btn-container .btm1 {
   margin-top: 1.5em;
 }
 
-.carrusel, .beneficios-container .beneficios .icono-bene, .h2-container-promo, footer, .Contenido-valor, .contacto .form-container {
-  margin-top: 1.5em;
+.espacio, .Perro-container, .titulo-tienda-container, .carrusel, .beneficios-container .beneficios .icono-bene, .h2-container-promo, footer, .Contenido-valor, .contacto .form-container {
+  margin-top: 3em;
 }
 
 body {
   background-image: url(/src/Multimedia/Images/background.png);
+}
+
+.titulo-tienda-container {
+  width: 80%;
+  background-color: #EDEDED;
+  border-radius: 2em;
+  border: 2px solid #212121;
+}
+.titulo-tienda-container .titulo-tienda {
+  display: flex;
+  justify-content: center;
+  flex-direction: none;
+}
+
+.Perro-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: none;
+  background-color: #fdfd96;
+  padding: 2em;
+  border: 2px solid #212121;
+  border-radius: 2em;
+}
+
+.Gato-container {
+  margin-top: 4em;
+  display: flex;
+  justify-content: center;
+  flex-direction: none;
+  background-color: #77dd77;
+  padding: 2em;
+  border: 2px solid #212121;
+  border-radius: 2em;
+}
+
+.productosp-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: none;
+  padding-top: 5em;
+}
+
+.sidebar {
+  background-color: #77dd77;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 20%;
+  margin-left: 2em;
+  padding-top: 1em;
+  border-radius: 2em;
+  border: 2px solid #212121;
+}
+.sidebar .menu {
+  margin-top: 1em;
+  margin-left: 0.7em;
+}
+.sidebar .menu ul li {
+  list-style: none;
+}
+.sidebar .menu ul li ul li a {
+  text-decoration: none;
+}
+.sidebar .articulos {
+  margin-top: 1em;
+  margin-left: 0.7em;
+}
+.sidebar .articulos ul li {
+  list-style: none;
+}
+
+.productosP {
+  width: 70%;
+  margin-left: 2em;
+}
+.productosP .productos-tienda {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: none;
+}
+
+.titulo-accesorios {
+  width: 100%;
+  background-color: #EDEDED;
+  border-radius: 2em;
+  border: 2px solid #212121;
+  text-align: center;
+  margin-top: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */

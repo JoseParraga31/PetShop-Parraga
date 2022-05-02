@@ -45,7 +45,7 @@
     
     
 .h2-container-promo{
-    @include Flexbox(flex,center);
+    @include Flexbox(flex,center, none);
     @extend %espacio;                                                                                                              
 }
 .productos{

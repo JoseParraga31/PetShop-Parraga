@@ -8,7 +8,7 @@
     }
 }
 .h2-container{
-    @include Flexbox(flex,center);
+    @include Flexbox(flex,center, none);
     margin-top: 1.5em;
 
     .h2{

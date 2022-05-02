@@ -18,7 +18,7 @@
         .form-h1-container{
             grid-area: form-h1-container;
             width: 80%;
-            @include Flexbox(flex,center);
+            @include Flexbox(flex,center,none);
             border-radius: map-get($borders-standard,borders-radious);
             background-color: #EDEDED;
             border: map-get($borders-standard,borders);
@@ -28,7 +28,7 @@
 
         .text-area-container{
             grid-area: text-area-container;
-            @include Flexbox(flex,center);
+            @include Flexbox(flex,center,none);
             width: 60%;
             background: #77dd77;
             border: map-get($borders-standard,borders);
@@ -40,11 +40,11 @@
                 width: 60%;
 
                 .titulo1{
-                    @include Flexbox(flex,center);
+                    @include Flexbox(flex,center,none);
                 } 
                 .txt{
                     width: 100%;
-                    @include Flexbox(flex,center);
+                    @include Flexbox(flex,center,none);
                     
                     textarea{
                         width: 100%;
@@ -59,7 +59,7 @@
         .datos-container{
             grid-area: datos-container;
             width: 60%;
-            @include Flexbox(flex,center);
+            @include Flexbox(flex,center,none);
             border-radius: map-get($borders-standard,borders-radious);
             background-color: #ff6961;
             border: map-get($borders-standard,borders);
@@ -67,12 +67,12 @@
             
             .datos{
                 width: 100%;
-                justify-content: space-around;
-        
+                @include Flexbox(flex,space-around,none);
+                
                 .datos-form{
                     width: 100%;
                     list-style: none;
-                    @include Flexbox(flex,space-around);
+                    @include Flexbox(flex,space-around,none);
                     padding: 1.6em;
                     flex-wrap: wrap;
                 }
@@ -86,7 +86,7 @@
             background-color: #fdfd96;
             border: map-get($borders-standard,borders);
             opacity: 0.8;
-            @include Flexbox(flex,center);
+            @include Flexbox(flex,center,none);
             .btm1{
                 margin-top: 1.5em;
                 }

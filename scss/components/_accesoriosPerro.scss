@@ -1,0 +1,55 @@
+.productosp-container{
+    @include Flexbox(flex,center,none);
+    @include paddintop(5em);
+}
+    .sidebar{
+        background-color: #77dd77;
+        @include Flexbox(flex,space-around,column);
+        width: 20%;
+        margin-left: 2em;
+        @include paddintop(1em);
+        border-radius: map-get($borders-standard, borders-radious );
+        border: map-get($borders-standard,borders);
+        
+
+        .menu{
+            margin-top: 1em;
+            margin-left: 0.7em;
+            ul li{
+                list-style: none;
+                ul li a{
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .articulos{
+            margin-top: 1em;
+            margin-left: 0.7em;
+
+            ul li{
+                list-style: none;
+            }
+
+        }
+    }
+    .productosP{
+        width: 70%;
+        margin-left: 2em;
+        
+        .productos-tienda{
+            @include Flexbox(flex,space-between,none);
+        }
+    }
+    .espacio{
+        @extend %espacio;
+    }
+
+    .titulo-accesorios{
+        width: 100%;
+        background-color: #EDEDED;
+        border-radius: map-get($borders-standard, borders-radious);
+        border: map-get($borders-standard,borders);
+        text-align: center;
+        margin-top: 2em;
+    }
