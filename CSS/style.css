@@ -176,7 +176,7 @@ footer .bot {
 
 .titulo {
   margin-top: 0.2em;
-  border-radius: 1em;
+  border-radius: 2em;
 }
 
 .historia-container {
@@ -189,7 +189,7 @@ footer .bot {
 
 .historia {
   margin-top: 0.2em;
-  border-radius: 1em;
+  border-radius: 2em;
 }
 
 .img-historia {
@@ -261,7 +261,7 @@ footer .bot {
   width: 80%;
   display: flex;
   justify-content: center;
-  border-radius: 1em;
+  border-radius: 2em;
   background-color: #EDEDED;
   border: solid 2px;
   opacity: 0.8;
