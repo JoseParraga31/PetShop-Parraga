@@ -1,6 +1,26 @@
+.banner-perro{
+    background-color: #fdfd96;
+    border-radius: map-get($borders-standard, borders-radious);
+    border: map-get($borders-standard,borders);
+    text-align: center;
+    margin-top: 2em;
+    padding: 2em;
+}
+.accesorios{
+    @include Flexbox(flex,center,none);
+    .titulo-accesorios{
+        width: 50%;
+        background-color: #EDEDED;
+        border-radius: map-get($borders-standard, borders-radious);
+        border: map-get($borders-standard,borders);
+        text-align: center;
+        margin-top: 1em;
+        
+    }
+}
 .productosp-container{
     @include Flexbox(flex,center,none);
-    @include paddintop(5em);
+    @include paddintop(2em);
 }
     .sidebar{
         background-color: #77dd77;
@@ -13,24 +33,13 @@
         
 
         .menu{
-            margin-top: 1em;
-            margin-left: 0.7em;
-            ul li{
-                list-style: none;
-                ul li a{
-                    text-decoration: none;
-                }
-            }
+            margin-left: 1.5em;
+            
         }
 
         .articulos{
             margin-top: 1em;
             margin-left: 0.7em;
-
-            ul li{
-                list-style: none;
-            }
-
         }
     }
     .productosP{
@@ -44,12 +53,10 @@
     .espacio{
         @extend %espacio;
     }
-
-    .titulo-accesorios{
-        width: 100%;
-        background-color: #EDEDED;
-        border-radius: map-get($borders-standard, borders-radious);
-        border: map-get($borders-standard,borders);
-        text-align: center;
-        margin-top: 2em;
+    .font-text{
+        font-size: 0.6em;
+    }
+    .decoration{
+        text-decoration: none;
+        color: #212121;
     }
