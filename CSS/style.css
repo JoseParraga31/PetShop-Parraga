@@ -354,6 +354,7 @@ footer .bot {
 
 body {
   background-image: url(/src/Multimedia/Images/background.png);
+  overflow-x: hidden;
 }
 
 .titulo-tienda-container {
