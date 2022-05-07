@@ -1,3 +1,4 @@
+
 .banner-perro{
     background-color: #fdfd96;
     border-radius: map-get($borders-standard, borders-radious);
@@ -53,13 +54,15 @@
     .espacio{
         @extend %espacio;
     }
-    .card-hover{
-        
-    }
     .font-text{
         font-size: 0.6em;
     }
     .decoration{
         text-decoration: none;
         color: #212121;
+    }
+    .carta1{
+        &:hover{
+            border: #77dd77 0.2em solid;
+        } 
     }

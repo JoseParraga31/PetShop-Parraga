@@ -22,22 +22,6 @@
                 background-color: #84b6f4;
                 padding: 3em 3em 3em 3em;
                 border-radius: map-get($borders-standard, borders-radious );
-                .contenido{
-                    width: 100%;
-                    display: flex;
-                    margin-bottom: 0.5em;
-                    ul li{
-                        list-style: none;
-                    }
-                }
-                .produ-flex{
-                    display: flex;
-                    flex-direction: row;
-                }
-                .img{
-                    width: 5em;
-                    height: 5em;
-                }
             }
         } 
     }  
@@ -53,20 +37,12 @@
     padding: 3em 3em 3em 3em;
     border-radius: map-get($borders-standard, borders-radious );
     border: map-get($borders-standard,borders);
+    @include Flexbox(flex,space-between, none);
 
-    .contenido{
-        display: flex;
-        ul li{
-            list-style: none;
-        }
-    }
     .carta1{
         &:hover{
             border: #77dd77 0.2em solid;
         } 
     }
 }
-.img{
-    width: 10em;
-    height: 10em;
-}
+
