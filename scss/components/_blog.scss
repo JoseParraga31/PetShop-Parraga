@@ -1,0 +1,27 @@
+.blog{
+	@include Flexbox(flex,center, none);
+	background-color: #ff6961;
+	margin-top: 2em;
+	padding: 2em;
+	border-radius: map-get($borders-standard, borders-radious );
+    border: map-get($borders-standard,borders);
+	.principal{
+		height: 300px;
+	}
+}
+
+
+#global {
+	height: 300px;
+	width: 50%;
+	border: 1px solid #ddd;
+	background: #f1f1f1;
+	overflow-y: scroll;
+}
+#mensajes {
+	width: 100%;
+}
+.texto {
+	padding:4px;
+	background:#fff;
+}
