@@ -1,3 +1,11 @@
+.titulo-blog{
+	width: 35%;
+	margin-top: 2em;
+	background-color: #EDEDED;
+	border-radius: map-get($borders-standard, borders-radious );
+    border: map-get($borders-standard,borders);
+	@include Flexbox(flex,center, none);
+}
 .blog{
 	@include Flexbox(flex,center, none);
 	background-color: #ff6961;
@@ -5,6 +13,7 @@
 	padding: 2em;
 	border-radius: map-get($borders-standard, borders-radious );
     border: map-get($borders-standard,borders);
+	
 	.principal{
 		height: 300px;
 	}

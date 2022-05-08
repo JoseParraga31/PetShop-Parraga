@@ -56,7 +56,19 @@
   margin-top: 1.5em;
 }
 .h2-container .h2 {
+  width: 45%;
+  margin-top: 0.5em;
+  background-color: #EDEDED;
+  border-radius: 2em;
+  border: 2px solid #212121;
+  display: flex;
+  justify-content: center;
+  flex-direction: none;
   padding: 0.5em;
+}
+
+.cachorros-container {
+  margin-top: 2em;
 }
 
 .cachorros {
@@ -102,7 +114,8 @@
   flex-direction: none;
 }
 
-.productos {
+.productos1 {
+  margin-top: 2em;
   background-color: #84b6f4;
   padding: 3em 3em 3em 3em;
   border-radius: 2em;
@@ -111,7 +124,7 @@
   justify-content: space-between;
   flex-direction: none;
 }
-.productos .carta1:hover {
+.productos1 .carta1:hover {
   border: #77dd77 0.2em solid;
 }
 
@@ -436,6 +449,17 @@ body {
 
 .carta1:hover {
   border: #77dd77 0.2em solid;
+}
+
+.titulo-blog {
+  width: 35%;
+  margin-top: 2em;
+  background-color: #EDEDED;
+  border-radius: 2em;
+  border: 2px solid #212121;
+  display: flex;
+  justify-content: center;
+  flex-direction: none;
 }
 
 .blog {

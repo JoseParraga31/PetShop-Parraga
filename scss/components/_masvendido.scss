@@ -32,17 +32,19 @@
     @include Flexbox(flex,center, none);
     @extend %espacio;                                                                                                              
 }
-.productos{
-    background-color: #84b6f4;
-    padding: 3em 3em 3em 3em;
-    border-radius: map-get($borders-standard, borders-radious );
-    border: map-get($borders-standard,borders);
-    @include Flexbox(flex,space-between, none);
+    .productos1{
+        margin-top: 2em;
+        background-color: #84b6f4;
+        padding: 3em 3em 3em 3em;
+        border-radius: map-get($borders-standard, borders-radious );
+        border: map-get($borders-standard,borders);
+        @include Flexbox(flex,space-between, none);
+    
+        .carta1{
+            &:hover{
+                border: #77dd77 0.2em solid;
+                
 
-    .carta1{
-        &:hover{
-            border: #77dd77 0.2em solid;
-        } 
+            } 
+        }
     }
-}
-
