@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/JoseParraga31/PetShop-Parraga.git"
   },
-  "author": "",
+  "author": "Jose Parraga",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JoseParraga31/PetShop-Parraga/issues"
   },
-  "homepage": "https://github.com/JoseParraga31/PetShop-Parraga#readme"
+  "homepage": "https://github.com/JoseParraga31/PetShop-Parraga#readme",
+  "dependencies": {
+    "@icon/unicons": "^3.0.6-alpha.0"
+  }
 }
