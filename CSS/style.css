@@ -2,9 +2,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Source Sans Pro", sans-serif !important;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
-  color: #212121 !important;
+  color: #212121;
   box-sizing: border-box;
 }
 
@@ -39,6 +39,14 @@
   border-radius: 2em;
   border: 2px solid #212121;
 }
+.beneficios-container .beneficios .icono-bene {
+  text-align: center;
+  margin-top: 0.5em;
+}
+.beneficios-container .beneficios .txt-beneficios {
+  margin-bottom: 0;
+}
+
 /*componets/cachorros*/
 @media screen and (max-width: 490px) {
   .h2-container {
@@ -238,7 +246,7 @@ footer .bot {
 }
 
 /*componets/contacto*/
-/* estilos del formulario*/
+/* estilos del formulario de contacto*/
 .contacto {
   margin-top: 3em;
 }
@@ -253,7 +261,7 @@ footer .bot {
 }
 .contacto .form-container .form-h1-container {
   grid-area: form-h1-container;
-  width: 80%;
+  width: 53%;
   display: flex;
   justify-content: center;
   flex-direction: none;
@@ -262,6 +270,13 @@ footer .bot {
   border: 2px solid #212121;
   opacity: 0.8;
   flex-wrap: wrap;
+  align-items: center;
+}
+.contacto .form-container .form-name input[type=nombre],
+.contacto .form-container .form-email input[type=email] {
+  border-radius: 0.3em;
+  border: none;
+  padding: 0.2em;
 }
 .contacto .form-container .text-area-container {
   grid-area: text-area-container;
@@ -337,7 +352,7 @@ footer .bot {
   margin-top: 1.5em;
 }
 
-.espacio, .Perro-container, .titulo-tienda-container, .carrusel, .beneficios-container .beneficios .icono-bene, .h2-container-promo, footer, .Contenido-valor, .contacto .form-container {
+.espacio, .Perro-container, .titulo-tienda-container, .carrusel, .h2-container-promo, footer, .Contenido-valor, .contacto .form-container {
   margin-top: 3em;
 }
 

@@ -24,8 +24,11 @@
         border-radius: map-get($borders-standard, borders-radious);
         border: map-get($borders-standard,borders);
         .icono-bene{
-            @extend %espacio;
+            text-align: center;
+            margin-top: 0.5em;
         }
-        
+        .txt-beneficios{
+            margin-bottom: 0;
+        } 
     }
 }

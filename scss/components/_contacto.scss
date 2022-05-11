@@ -1,4 +1,4 @@
-/* estilos del formulario*/
+/* estilos del formulario de contacto*/
 .contacto{
     margin-top: 3em;
     .form-container{
@@ -17,13 +17,20 @@
 
         .form-h1-container{
             grid-area: form-h1-container;
-            width: 80%;
+            width: 53%;
             @include Flexbox(flex,center,none);
             border-radius: map-get($borders-standard,borders-radious);
             background-color: #EDEDED;
             border: map-get($borders-standard,borders);
             opacity: 0.8;
             flex-wrap: wrap;
+            align-items: center;
+        }
+        .form-name input[type="nombre"],
+        .form-email input[type="email"]{
+            border-radius: 0.3em;
+            border: none;
+            padding: 0.2em;
         }
 
         .text-area-container{
