@@ -1,27 +1,40 @@
 
 @media screen  and (max-width: 490px){
+
+    .titulo-blog{
+        width: 100%;
+        .titulo{
+            width: 100%;
+            display: flex;
+        }
+    }
     .mobile-template{
         display:flex;
         .beneficios-container{
             width: 20%;
+            @include Flexbox(flex,space-between,column);
             margin-top: 4em;
-            margin-left: 3em !important;
+            margin-left: 0 !important;
+            
             .beneficios{
-                padding-top: 3em;
-                padding-bottom: 3em;
+                width: 100%;
+                height: 60%;
+                margin-top: 15em;
+            
             }
         } 
+        
         .cachorros-container{
             display: none !important;
         }
         .productos-seccion{
-            width: 80%;
-
-            .productos{
+            width: 75%;
+            .productos1{
                 width: 100%;
                 background-color: #84b6f4;
-                padding: 3em 3em 3em 3em;
                 border-radius: map-get($borders-standard, borders-radious );
+                @include Flexbox(flex,center,column);
+                
             }
         } 
     }  
