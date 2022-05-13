@@ -24,15 +24,57 @@
     @include paddintop(2em);
 }
     .sidebar{
-        background-color: #77dd77;
-        @include Flexbox(flex,space-around,column);
-        width: 20%;
+        z-index: 1000;
+        position: sticky;
+        top: 5em;
+        background-color: #EDEDED;
+        @include Flexbox(flex,space-between,column);
+        width: 10%;
+        height: 15em;
         margin-left: 2em;
         @include paddintop(1em);
         border-radius: map-get($borders-standard, borders-radious );
         border: map-get($borders-standard,borders);
+        text-align: center;
+        padding-bottom: 1.5em;
         
-
+        .boton-sidebar{
+            border: 0.5px #fdfd96 solid ;
+            
+            .boton{
+                background-color: #77dd77;
+                border-radius: 0.5em;
+                box-shadow: 0 4px 8px 0 rgb(21 21 21);
+                &:hover{
+                    background-color:#49e049;
+                }
+            }
+        }
+        .dd-menu{
+            background-color:#77dd77;
+            .dd-li-menu{
+                list-style: none;
+                z-index: 10;
+                .dd-a-menu{   
+                    display: block;
+                    width: 100%;
+                    padding: 0.25rem 1rem;
+                    clear: both;
+                    font-weight: 400;
+                    color: #212529;
+                    text-align: inherit;
+                    text-decoration: none;
+                    white-space: nowrap;
+                    background-color: transparent;
+                    border: 0;
+                    &:hover{
+                        background-color:#49e049;
+                        border-radius: 0.5em;
+                        box-shadow: 0 4px 8px 0 rgb(21 21 21)
+                    }
+                }
+            }
+        }   
         .menu{
             margin-left: 1.5em;
             
@@ -46,6 +88,7 @@
     .productosP{
         width: 70%;
         margin-left: 2em;
+        z-index: 0;
         
         .productos-tienda{
             @include Flexbox(flex,space-between,none);
@@ -56,6 +99,7 @@
     }
     .font-text{
         font-size: 0.6em;
+        
 
     }
     .decoration{
@@ -63,7 +107,11 @@
         color: #212121;
     }
     .carta1{
+        border-radius: 0.5em;
+        background-color: #ff6961;
+        padding-top: 1em;
         &:hover{
-            border: #77dd77 0.2em solid;
+            border: #ededed 0.1em solid;
+            box-shadow: 0 10px 14px 0 rgb(21 21 21)
         } 
     }

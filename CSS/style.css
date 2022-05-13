@@ -132,8 +132,19 @@
   justify-content: space-between;
   flex-direction: none;
 }
-.productos1 .carta1:hover {
+
+.carta2:hover {
   border: #77dd77 0.2em solid;
+  box-shadow: 0 8px 12px 0 rgb(21, 21, 21);
+}
+
+.boton1 {
+  background-color: #84b6f4;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 8px 0 rgb(21, 21, 21);
+}
+.boton1:hover {
+  background-color: #9ec6f8;
 }
 
 /*componets/footer*/
@@ -425,15 +436,57 @@ body {
 }
 
 .sidebar {
-  background-color: #77dd77;
+  z-index: 1000;
+  position: sticky;
+  top: 5em;
+  background-color: #EDEDED;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
-  width: 20%;
+  width: 10%;
+  height: 15em;
   margin-left: 2em;
   padding-top: 1em;
   border-radius: 2em;
   border: 2px solid #212121;
+  text-align: center;
+  padding-bottom: 1.5em;
+}
+.sidebar .boton-sidebar {
+  border: 0.5px #fdfd96 solid;
+}
+.sidebar .boton-sidebar .boton {
+  background-color: #77dd77;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 8px 0 rgb(21, 21, 21);
+}
+.sidebar .boton-sidebar .boton:hover {
+  background-color: #49e049;
+}
+.sidebar .dd-menu {
+  background-color: #77dd77;
+}
+.sidebar .dd-menu .dd-li-menu {
+  list-style: none;
+  z-index: 10;
+}
+.sidebar .dd-menu .dd-li-menu .dd-a-menu {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+.sidebar .dd-menu .dd-li-menu .dd-a-menu:hover {
+  background-color: #49e049;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 8px 0 rgb(21, 21, 21);
 }
 .sidebar .menu {
   margin-left: 1.5em;
@@ -446,6 +499,7 @@ body {
 .productosP {
   width: 70%;
   margin-left: 2em;
+  z-index: 0;
 }
 .productosP .productos-tienda {
   display: flex;
@@ -462,8 +516,14 @@ body {
   color: #212121;
 }
 
+.carta1 {
+  border-radius: 0.5em;
+  background-color: #ff6961;
+  padding-top: 1em;
+}
 .carta1:hover {
-  border: #77dd77 0.2em solid;
+  border: #ededed 0.1em solid;
+  box-shadow: 0 10px 14px 0 rgb(21, 21, 21);
 }
 
 .titulo-blog {
