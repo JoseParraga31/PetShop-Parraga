@@ -4,13 +4,15 @@
         margin-left: 8em !important;
     }
     .Productos-mobile{
-        width: 90%;
-        @include Flexbox(flex,center,none);
+        width: 100% !important;
+        @include Flexbox(flex,space-between,none);
+        padding: 0em;
         flex-direction:column;
         margin-right: 0;
         .productosP{
             @include Flexbox(flex,flex-start,none);
             width: 60% !important;
+            margin: 0;
             
         }
         .productos-tienda{

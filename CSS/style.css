@@ -462,10 +462,11 @@ body {
   }
 
   .Productos-mobile {
-    width: 90%;
+    width: 100% !important;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: none;
+    padding: 0em;
     flex-direction: column;
     margin-right: 0;
   }
@@ -474,6 +475,7 @@ body {
     justify-content: flex-start;
     flex-direction: none;
     width: 60% !important;
+    margin: 0;
   }
   .Productos-mobile .productos-tienda {
     display: flex;
