@@ -1,3 +1,33 @@
+@media screen  and (max-width: 490px){
+    .titulo-blog{
+        width: 60% !important;
+	    @include Flexbox(flex,center, none);
+        .titulo{
+            width: 100%;
+            text-align: center;  
+        }
+    }
+
+	.blog{
+		width: 95%;
+
+		.principal{
+			width: 70%;
+			height: 150px;
+		}
+	}
+	#global {
+		height: 150px;
+		width: 100%;
+		border: 1px solid #ddd;
+		background: #f1f1f1;
+		overflow-y: scroll;
+	}
+}
+
+
+
+
 .titulo-blog{
 	width: 35%;
 	margin-top: 2em;

@@ -1,4 +1,27 @@
-
+@media screen  and (max-width: 490px){
+    .sidebar{   
+        width: 20% !important;
+        margin-left: 8em !important;
+    }
+    .Productos-mobile{
+        width: 90%;
+        @include Flexbox(flex,center,none);
+        flex-direction:column;
+        margin-right: 0;
+        .productosP{
+            @include Flexbox(flex,flex-start,none);
+            width: 60% !important;
+            
+        }
+        .productos-tienda{
+            @include Flexbox(flex,flex-end,none);
+            width: 60% !important;
+            margin-left: 0.5em;
+            margin-right: 0;
+            margin-top: 0;
+        }
+    } 
+}
 .banner-perro{
     background-color: #fdfd96;
     border-radius: map-get($borders-standard, borders-radious);
@@ -85,13 +108,21 @@
             margin-left: 0.7em;
         }
     }
+    .Productos-mobile{
+        width: 100%;
+        @include Flexbox(flex,center,none);
+        
+    }
     .productosP{
-        width: 70%;
+        width: 100%;
         margin-left: 2em;
         z-index: 0;
+        margin-right: 2.5em;
         
         .productos-tienda{
+            width: 100%;
             @include Flexbox(flex,space-between,none);
+           
         }
     }
     .espacio{

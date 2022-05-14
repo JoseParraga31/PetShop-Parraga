@@ -1,14 +1,14 @@
 @media screen  and (max-width: 490px){
     .carrusel{
-        margin-left: 0.1em;
-        
+        padding: 1em;
+        margin-left: 0.1em;  
     } 
 }
 .border-carrusel{
     background-color: #77dd77;
     border: map-get($borders-standard,borders);
     border-radius: map-get($borders-standard, borders-radious);
-    padding: 3em;
+    padding: 2em;
 }
 .carrusel{
     @extend %espacio;

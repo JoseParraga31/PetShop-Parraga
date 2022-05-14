@@ -18,6 +18,7 @@
 /*componets/carrusel*/
 @media screen and (max-width: 490px) {
   .carrusel {
+    padding: 1em;
     margin-left: 0.1em;
   }
 }
@@ -25,7 +26,7 @@
   background-color: #77dd77;
   border: 2px solid #212121;
   border-radius: 2em;
-  padding: 3em;
+  padding: 2em;
 }
 
 .beneficios-container {
@@ -91,14 +92,6 @@
 
 /*componets/masvendido*/
 @media screen and (max-width: 490px) {
-  .titulo-blog {
-    width: 100%;
-  }
-  .titulo-blog .titulo {
-    width: 100%;
-    display: flex;
-  }
-
   .mobile-template {
     display: flex;
   }
@@ -272,6 +265,40 @@ footer .bot {
 
 /*componets/contacto*/
 /* estilos del formulario de contacto*/
+@media screen and (max-width: 490px) {
+  .form-h1-container {
+    width: 80% !important;
+  }
+
+  .text-area-container {
+    width: 90% !important;
+  }
+  .text-area-container .text-area {
+    width: 80% !important;
+  }
+
+  .datos-container {
+    width: 100% !important;
+  }
+
+  .datos-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .datos-form .form-name,
+.datos-form .form-email {
+    width: 15em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: none;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .btn-container {
+    width: 25% !important;
+  }
+}
 .contacto {
   margin-top: 3em;
 }
@@ -302,6 +329,7 @@ footer .bot {
   border-radius: 0.3em;
   border: none;
   padding: 0.2em;
+  box-shadow: 0 8px 12px 0 rgb(21, 21, 21);
 }
 .contacto .form-container .text-area-container {
   grid-area: text-area-container;
@@ -335,6 +363,7 @@ footer .bot {
   resize: none;
   border-radius: 0.5em;
   flex-wrap: wrap;
+  box-shadow: 0 8px 12px 0 rgb(21, 21, 21);
 }
 .contacto .form-container .datos-container {
   grid-area: datos-container;
@@ -373,8 +402,15 @@ footer .bot {
   justify-content: center;
   flex-direction: none;
 }
-.contacto .form-container .btn-container .btm1 {
-  margin-top: 1.5em;
+.contacto .form-container .btn-container .btn5 {
+  cursor: pointer;
+  margin-top: 1em;
+  background-color: #ff6961;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 8px 0 rgb(21, 21, 21);
+}
+.contacto .form-container .btn-container .btn5:hover {
+  background-color: #fc766f;
 }
 
 .espacio, .Perro-container, .titulo-tienda-container, .carrusel, .h2-container-promo, footer, .Contenido-valor, .contacto .form-container {
@@ -419,6 +455,36 @@ body {
   border-radius: 2em;
 }
 
+@media screen and (max-width: 490px) {
+  .sidebar {
+    width: 20% !important;
+    margin-left: 8em !important;
+  }
+
+  .Productos-mobile {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: none;
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .Productos-mobile .productosP {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: none;
+    width: 60% !important;
+  }
+  .Productos-mobile .productos-tienda {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: none;
+    width: 60% !important;
+    margin-left: 0.5em;
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
 .banner-perro {
   background-color: #fdfd96;
   border-radius: 2em;
@@ -510,12 +576,21 @@ body {
   margin-left: 0.7em;
 }
 
+.Productos-mobile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: none;
+}
+
 .productosP {
-  width: 70%;
+  width: 100%;
   margin-left: 2em;
   z-index: 0;
+  margin-right: 2.5em;
 }
 .productosP .productos-tienda {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: none;
@@ -540,6 +615,34 @@ body {
   box-shadow: 0 10px 14px 0 rgb(21, 21, 21);
 }
 
+@media screen and (max-width: 490px) {
+  .titulo-blog {
+    width: 60% !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: none;
+  }
+  .titulo-blog .titulo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .blog {
+    width: 95%;
+  }
+  .blog .principal {
+    width: 70%;
+    height: 150px;
+  }
+
+  #global {
+    height: 150px;
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #f1f1f1;
+    overflow-y: scroll;
+  }
+}
 .titulo-blog {
   width: 35%;
   margin-top: 2em;

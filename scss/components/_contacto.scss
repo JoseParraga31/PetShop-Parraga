@@ -1,4 +1,33 @@
 /* estilos del formulario de contacto*/
+@media screen  and (max-width: 490px){
+    .form-h1-container{
+        width: 80% !important;
+    }
+    .text-area-container{
+        width: 90% !important;
+        .text-area{
+            width: 80% !important;
+        }
+    }
+    .datos-container{
+        width: 100% !important;
+    }
+    .datos-form{
+        display: flex;
+        flex-direction: column;
+        .form-name,
+        .form-email{
+            width: 15em;
+            @include Flexbox(flex,space-around,none);
+            flex-direction:column;
+            text-align: center;
+        }
+        
+    }
+    .btn-container{
+        width: 25% !important;
+    }
+}
 .contacto{
     margin-top: 3em;
     .form-container{
@@ -31,6 +60,8 @@
             border-radius: 0.3em;
             border: none;
             padding: 0.2em;
+            box-shadow: 0 8px 12px 0 rgb(21 21 21);
+
         }
 
         .text-area-container{
@@ -59,6 +90,8 @@
                         resize: none;
                         border-radius: 0.5em;
                         flex-wrap: wrap;
+                        box-shadow: 0 8px 12px 0 rgb(21 21 21);
+                        
                     }
                 } 
             }
@@ -94,8 +127,16 @@
             border: map-get($borders-standard,borders);
             opacity: 0.8;
             @include Flexbox(flex,center,none);
-            .btm1{
-                margin-top: 1.5em;
+            .btn5{
+                cursor: pointer;
+                margin-top: 1em;
+                background-color: 
+                #ff6961;
+                border-radius: 0.5em;
+                box-shadow: 0 4px 8px 0 rgb(21 21 21);
+                &:hover{
+                    background-color:#fc766f;
+                }
                 }
         } 
     }

@@ -1,13 +1,5 @@
 
 @media screen  and (max-width: 490px){
-
-    .titulo-blog{
-        width: 100%;
-        .titulo{
-            width: 100%;
-            display: flex;
-        }
-    }
     .mobile-template{
         display:flex;
         .beneficios-container{
@@ -20,7 +12,6 @@
                 width: 100%;
                 height: 60%;
                 margin-top: 15em;
-            
             }
         } 
         
@@ -55,7 +46,6 @@
     
         
         }
-   
 
     .carta2{
         &:hover{
