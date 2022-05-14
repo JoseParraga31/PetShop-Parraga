@@ -269,12 +269,23 @@ footer .bot {
   .form-h1-container {
     width: 80% !important;
   }
+  .form-h1-container .form-h1 {
+    font-weight: 700;
+    font-size: 1.4em;
+    font-family: sans-serif;
+  }
 
   .text-area-container {
     width: 90% !important;
   }
   .text-area-container .text-area {
     width: 80% !important;
+  }
+  .text-area-container .text-area .titulo1 {
+    margin-top: 0.5em;
+    font-weight: 700;
+    font-size: 1.2em;
+    font-family: sans-serif;
   }
 
   .datos-container {
@@ -287,7 +298,7 @@ footer .bot {
   }
   .datos-form .form-name,
 .datos-form .form-email {
-    width: 15em;
+    width: 11em;
     display: flex;
     justify-content: space-around;
     flex-direction: none;
