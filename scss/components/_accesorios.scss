@@ -1,3 +1,5 @@
+/*estilos de las secciones de la tienda*/
+    /*queries de la tienda*/
 @media screen  and (max-width: 490px){
     .sidebar{   
         width: 20% !important;
@@ -24,6 +26,7 @@
         }
     } 
 }
+    /*fin queries de la tienda*/
 .banner-perro{
     background-color: #fdfd96;
     border-radius: map-get($borders-standard, borders-radious);
@@ -148,3 +151,4 @@
             box-shadow: 0 10px 14px 0 rgb(21 21 21)
         } 
     }
+    /*fin estilos de las secciones de la tienda*/

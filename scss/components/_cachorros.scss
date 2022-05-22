@@ -1,4 +1,6 @@
-@import"../base/mixins";
+/*estilos seccion cachorros*/
+    /*queries seccion cachorros*/
+@import "./base/mixins";
 @media screen  and (max-width: 490px){
     .h2-container{
         display: none !important;
