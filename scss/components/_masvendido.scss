@@ -1,4 +1,5 @@
-
+/* estilos seccion mas vendido*/
+    /* Queries seccion mas bendido*/
 @media screen  and (max-width: 490px){
     .mobile-template{
         display:flex;
@@ -30,7 +31,7 @@
         } 
     }  
 }
-    
+ /*Fin Queries seccion mas bendido*/   
     
 .h2-container-promo{
     @include Flexbox(flex,center, none);
@@ -62,3 +63,4 @@
             background-color:#9ec6f8;
         }
     }   
+/*Fin estilos seccion mas vendido*/

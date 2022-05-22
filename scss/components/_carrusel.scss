@@ -1,9 +1,12 @@
+/*estilos seccion carrusel*/
+    /*queries seccion carrusel*/
 @media screen  and (max-width: 490px){
     .carrusel{
         padding: 1em;
         margin-left: 0.1em;  
     } 
 }
+ /*fin queries seccion carrusel*/
 .border-carrusel{
     background-color: #77dd77;
     border: map-get($borders-standard,borders);
@@ -14,6 +17,8 @@
     @extend %espacio;
     
 }
+/*estilos seccion carrusel*/
+/*estilos seccion menu de beneficios*/
 .beneficios-container{
     width: 100%;
     margin-left: 8em;
@@ -32,3 +37,4 @@
         } 
     }
 }
+/*fin estilos seccion menu de beneficios*/

@@ -1,4 +1,4 @@
-
+/* estilos seccion Tienda*/
 .titulo-tienda-container{
     width: 80%;
     @extend %espacio;
@@ -29,3 +29,4 @@
     border: map-get($borders-standard,borders);
     border-radius: map-get($borders-standard,borders-radious);
 }
+/*Fin estilos seccion Tienda*/

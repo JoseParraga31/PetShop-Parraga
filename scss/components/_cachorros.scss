@@ -1,6 +1,6 @@
 /*estilos seccion cachorros*/
     /*queries seccion cachorros*/
-@import "./base/mixins";
+@import "../base/mixins";
 @media screen  and (max-width: 490px){
     .h2-container{
         display: none !important;
@@ -9,6 +9,7 @@
         display: none !important;
     }
 }
+/*fin queries seccion cachorros*/
 .h2-container{
     @include Flexbox(flex,center, none);
     margin-top: 1.5em;
@@ -40,3 +41,4 @@
         }
     }
 }
+/*fin estilos seccion cachorros*/
