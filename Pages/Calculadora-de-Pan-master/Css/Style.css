@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #FFE0B2;
+}
+.container-Tituli-Principal{
+    margin: 1em 10em 0.5em 0.5em;
+    border: solid 1px #BDBDBD;
+    border-radius: 1em;
+    background-color: #FF9800;
+    width: 90%;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.titulo-Secundario{
+    text-align: center;
+    margin-top: 1em;
+}
+.rounded{
+    width: 70%;
+    margin-left: 3.5em;
+}
+.Container-recetas{
+width: 70%;
+border:solid 1px #BDBDBD;
+
+
+}
+.recetas{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+a{
+text-decoration: none;
+color: #212121;
+}
+.container-foto{
+    display: flex;
+    justify-content: space-around;
+
+}
+.img{
+    height: 10em;
+    width: 10em;
+}
+.calculos{
+    list-style: none;
+    text-align: start;
+    margin-left: 0;
+}
+.container-porcentaje{
+    display: flex;
+    justify-content:flex-end ;
+}
+
+.container-ingrediente-categoria{
+    display: flex;
+    width: 95%;
+    margin-top: 0.5em;
+}
+.ingrediente{
+    display: flex;
+}
+.peso-final{
+    margin-left: 6em;
+}
+.Peso-pieza input[type ="pieza"],
+.ingrediente input[type="pesoIngrediente"],
+.ingrediente input[type="Nombreingrediente"],
+.container-porcentaje input[type="porcentaje"]{
+    width: 5em ;
+    border:solid 1px #BDBDBD;
+    background-color: #FFE0B2;
+    margin-left: 1em;
+}
+
+.btn1{
+    height: 4em;
+    width: 4em;
+    border-radius: 10em;
+    background-color:#F57C00 ;
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    box-shadow: 0 4px 8px 0px rgb(21 21 21);
+}

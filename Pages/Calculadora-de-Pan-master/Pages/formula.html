@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- CSS-->
+        <link rel="stylesheet" href="/Css/Style.css">
+        <title>Calculadora del pan </title>
+    <title>Pan Negro</title>
+</head>
+<body>
+    <div>
+        <div class="container container-Tituli-Principal">
+                <h1 class="Tituli-Principal"><input type="text" id="titulo" name="titulo"></h1>
+        </div>  
+    </div>
+    <div class="container container-foto">
+        <div class="col-md-6 calculos-div">
+            <ul class="calculos">
+                <li class="Peso-pieza"> 
+                <label for="">Pieza = </label> 
+                <input type="pieza" id="pieza" name="pieza" placeholder="  Gr"></li>
+                <li class="Hidratacion">Hidratacion = <p id="hidratcionFinal"></p> </li>
+                <li class="Masa-final">Peso total = <p id="pesoTotal"></p> </li>
+                <li class="Piesas">Piesas = <p id="totalPiesas"></p> </li>
+            </ul>
+        </div>
+        <div class="col-md-6 foto">
+            <img class="img-fluid img" src="/Src/images/Pan.jpg" alt="pan">
+        </div>
+    </div>
+    <div class="container" id="contenedor">
+        <div class="row">
+            <h4 class="titulo-Secundario">Formula</h4>
+            <hr class="rounded">
+        </div>
+        <div class="container container-porcentaje">
+            <label for="">formula =</label> 
+            <input type="porcentaje" id="porcentaje" name="porcentaje" placeholder = "     %" class="porcentaje">
+        </div>
+        <!-- <div class="container container-ingrediente-categoria">
+            <div class="Categoria">
+                <select name="categorias" id="categorias">
+                    <option value="1">Harina</option>
+                    <option value="2">Liquido</option>
+                    <option value="3">Seco</option>
+                    <option value="4">Fermento</option>
+                    <option value="5">Otro</option>
+                </select>
+            </div>  
+            <div class="ingrediente">
+                <input type="Nombreingrediente" id="nombreIngrediente" name="nombreIngrediente" placeholder="Ingredinte">
+    
+                <input type="pesoIngrediente" id="pesoIngrediente" name="pesoIngrediente" placeholder="  Gr" class="ingrediente">
+                <p class="peso-final" id="PesoMultiplicado"></p> 
+            </div>
+        </div> -->
+    </div>
+
+    <button type="button" class="btn1" id="btn1"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+    </svg></i></button>
+    <script src="/Js/calculadorapan2.js"></script>
+<!-- Bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
