@@ -446,7 +446,7 @@ footer .bot {
 }
 
 /*Fin estilos del formulario de contacto*/
-.espacio, .Perro-container, .titulo-tienda-container, .carrusel, .h2-container-promo, footer, .Contenido-valor, .contacto .form-container {
+.card-container, .espacio, .Perro-container, .titulo-tienda-container, .carrusel, .h2-container-promo, footer, .Contenido-valor, .contacto .form-container {
   margin-top: 3em;
 }
 
@@ -1035,5 +1035,20 @@ h6 span {
 }
 
 /*fin estilos de formularios tomados de freefrondend*/
+.div-titulo {
+  display: flex;
+  justify-content: center;
+  flex-direction: none;
+}
+.div-titulo .titulo-carga {
+  width: 40%;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: none;
+}
 
 /*# sourceMappingURL=style.css.map */

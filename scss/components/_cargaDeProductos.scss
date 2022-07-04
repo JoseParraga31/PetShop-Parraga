@@ -1,0 +1,13 @@
+.div-titulo{
+    @include Flexbox(flex,center, none);
+    .titulo-carga{
+        width: 40%;
+        text-align: center;
+        
+    }
+}
+
+.card-container{
+    @include Flexbox(flex,center, none);
+    @extend %espacio
+}
