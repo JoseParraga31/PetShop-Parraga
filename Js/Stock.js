@@ -18,10 +18,6 @@ const GatoAlimentos = []
 const GatoEsteticaeHigiene = []
 const GatoSnaks = []
 
-function TransformarJSON(arrayJson,array){
-    arrayJson = JSON.stringify(array)
-};
-
 function agregar(array,Producto){
     array.push(Producto)
     };
