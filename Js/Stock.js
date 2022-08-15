@@ -32,16 +32,16 @@ bntUploader.addEventListener('click',()=>{
         console.log(`categoria cargada ${categoriaUploaded}`);
 
     let subCategoriaUploaded = subCategoriaUploader.value;
-    console.log(`sub categoria cargada${subCategoriaUploaded}`);
+    console.log(`sub categoria cargada ${subCategoriaUploaded}`);
     
     let descripcionUploaded = descripcionUploader.value;
-    console.log(`sub categoria cargada ${descripcionUploaded}`);
+    console.log(`descripcion cargada  ${descripcionUploaded}`);
 
     let stockUploaded = parseInt(stockUploader.value);
-    console.log(stockUploaded);
+    console.log(`precio cargado ${stockUploaded}`);
 
     let precioUploaded = parseInt(precioUploader.value);
-    console.log(`sub categoria cargada ${precioUploaded}`);
+    console.log(`Precio cargado  ${precioUploaded}`);
 
     if(categoriaUploaded === "Categoria" || subCategoriaUploaded === "Sub Categorias" || descripcionUploaded === "" || isNaN(precioUploaded,stockUploaded)){
         alert('Los Campos Estan Vacios y/o Incompletos')
