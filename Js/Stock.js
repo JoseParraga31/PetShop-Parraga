@@ -26,22 +26,22 @@ function agregar(array,Producto){
 bntUploader.addEventListener('click',()=>{
     
     let imgUploaded = imgUploader.value
-        console.log(imgUploaded);
+        console.log(`ruta de la imagen ${imgUploaded}`);
 
     let categoriaUploaded = categoriaUploader.value;
-        console.log(categoriaUploaded);
+        console.log(`categoria cargada ${categoriaUploaded}`);
 
     let subCategoriaUploaded = subCategoriaUploader.value;
-    console.log(subCategoriaUploaded);
+    console.log(`sub categoria cargada${subCategoriaUploaded}`);
     
     let descripcionUploaded = descripcionUploader.value;
-    console.log(descripcionUploaded );
+    console.log(`sub categoria cargada ${descripcionUploaded}`);
 
     let stockUploaded = parseInt(stockUploader.value);
-    console.log(stockUploaded );
+    console.log(stockUploaded);
 
     let precioUploaded = parseInt(precioUploader.value);
-    console.log(precioUploaded);
+    console.log(`sub categoria cargada ${precioUploaded}`);
 
     if(categoriaUploaded === "Categoria" || subCategoriaUploaded === "Sub Categorias" || descripcionUploaded === "" || isNaN(precioUploaded,stockUploaded)){
         alert('Los Campos Estan Vacios y/o Incompletos')
