@@ -7,6 +7,7 @@ let subCategoriaUploader = document.querySelector("#subCategoriasUploader");
 let descripcionUploader = document.querySelector("#descripcion");
 let stockUploader = document.querySelector("#cantidaUploader");
 let precioUploader = document.querySelector("#precioUploader");
+let nombreUploader = document.querySelector("#nombreUploader")
 
 const perroAccesorio = []
 const perroAlimentos = []
@@ -42,22 +43,26 @@ bntUploader.addEventListener('click',()=>{
 
     let precioUploaded = parseInt(precioUploader.value);
     console.log(`Precio cargado  ${precioUploaded}`);
+    
+    let nombreUploaded = nombreUploader.value;
+    console.log(`nombre cargado  ${nombreUploaded}`);
 
     if(categoriaUploaded === "Categoria" || subCategoriaUploaded === "Sub Categorias" || descripcionUploaded === "" || isNaN(precioUploaded,stockUploaded)){
         alert('Los Campos Estan Vacios y/o Incompletos')
     }else{
         class Producto {
-            constructor(img, categoria, subcategoria,descripcion, stock, precio){
+            constructor(img, categoria, subcategoria,descripcion, stock, precio,nombre){
                 this.img = img;
                 this.categoria = categoria;
                 this.subcategoria = subcategoria;
                 this.descripcion = descripcion;
                 this.stock = stock
                 this.precio = precio;
-    
+                this.nombre = nombre
+                
             }} 
     
-            const nuevoProducto = new Producto(imgUploaded,categoriaUploaded,subCategoriaUploaded,descripcionUploaded,stockUploaded,precioUploaded )
+            const nuevoProducto = new Producto(imgUploaded,categoriaUploaded,subCategoriaUploaded,descripcionUploaded,stockUploaded,precioUploaded,nombreUploaded )
             
             if(nuevoProducto.categoria === "Perro" & nuevoProducto.subcategoria === "Accesorios"){
                 agregar(perroAccesorio, nuevoProducto);
@@ -101,6 +106,6 @@ bntUploader.addEventListener('click',()=>{
                 console.log(GatoSnaksJson);
             }
     }
-    
+    console.log(perroAccesorio);
 
 });
