@@ -1,0 +1,25 @@
+
+.titulo__carrito--container{
+    width: 40%;
+    @extend %espacio;
+    background-color: #EDEDED;
+    border-radius: map-get($borders-standard, borders-radious);
+    border: map-get($borders-standard,borders);
+    .titulo__carrito{
+        @include Flexbox(flex,center,none)
+    }
+}
+
+
+.Totales{
+    padding: 0.5em;
+    @include Flexbox(flex,space-around,none);
+    background-color: #fdfd96;
+    border-radius: map-get($borders-standard, borders-radious );
+    border: map-get($borders-standard,borders);
+    align-items: center;
+    p{
+        margin-top: 0.8em;
+        font-size: 16px;
+    }
+}

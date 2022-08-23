@@ -144,7 +144,9 @@ const stockPerroAccesorio = [
 
 ]
 
-let productosContainer = document.querySelector(`#Productos_container`)
+const productosContainer = document.querySelector(`#Productos_container`)
+const contenedorCarrito = document.querySelector(`#carrito__container`)
+
 let carrito = [];
 
 stockPerroAccesorio.forEach(Producto => {
@@ -172,5 +174,32 @@ stockPerroAccesorio.forEach(Producto => {
 const agregarAlCarrito = (prodId) =>{
     const item = stockPerroAccesorio.find((prod) => (prod.id === prodId));
     carrito.push(item)
+    RenderCarrito()
     console.log(carrito);
+}
+
+let RenderCarrito = () =>{
+    carrito.forEach((producto) => {
+        const div = document.createElement("div")
+        div.classList.add("card")
+        div.classList.add("carta1")
+        div.innerHTML=`
+        <img src="${Producto.img}"class="card-img-top img_card" alt="#">
+        <div class="card-body">
+        <h6 class="card-title">${Producto.nombre}</h6>
+        <p class="font-text">${Producto.descripcion}</p>
+        <p>Precio:
+        ${Producto.precio}$</p>
+        
+        <button onclick="eliminarDelCarrito(${producto.id})" class="btn btn-primary"></button>    
+        </div>
+        `
+
+        contenedorCarrito.appendChild(div)
+
+
+    })
+
+
+
 }
