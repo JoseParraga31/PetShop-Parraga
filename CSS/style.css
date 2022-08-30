@@ -447,7 +447,7 @@ footer .bot {
 }
 
 /*Fin estilos del formulario de contacto*/
-.titulo__carrito--container, .card-container, .espacio, .Perro-container, .titulo-tienda-container, .carrusel, .h2-container-promo, footer, .Contenido-valor, .contacto .form-container {
+.Totales--style, .carrito__container--style, .titulo__carrito--container, .card-container, .espacio, .Perro-container, .titulo-tienda-container, .carrusel, .h2-container-promo, footer, .Contenido-valor, .contacto .form-container {
   margin-top: 3em;
 }
 
@@ -1068,7 +1068,13 @@ h6 span {
   flex-direction: none;
 }
 
-.Totales {
+.carrito__container--style {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: none;
+}
+
+.Totales--style {
   padding: 0.5em;
   display: flex;
   justify-content: space-around;
@@ -1078,7 +1084,7 @@ h6 span {
   border: 2px solid #212121;
   align-items: center;
 }
-.Totales p {
+.Totales--style p {
   margin-top: 0.8em;
   font-size: 16px;
 }
