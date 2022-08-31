@@ -7,7 +7,7 @@ const stockPerroAccesorio = [
     precio: 2500,
     stock: 12,
     subcategoria: 'Accesorios',
-    id: '01',
+    id: '1',
   },
 
   {
@@ -18,7 +18,7 @@ const stockPerroAccesorio = [
     precio: 2000,
     stock: 20,
     subcategoria: 'Accesorios',
-    id: '02',
+    id: '2',
   },
 
   {
@@ -29,7 +29,7 @@ const stockPerroAccesorio = [
     precio: 2000,
     stock: 20,
     subcategoria: 'Accesorios',
-    id: '03',
+    id: '3',
   },
 
   {
@@ -40,7 +40,7 @@ const stockPerroAccesorio = [
     precio: 1200,
     stock: 50,
     subcategoria: 'Accesorios',
-    id: '04',
+    id: '4',
   },
   {
     categoria: 'Perro',
@@ -50,7 +50,7 @@ const stockPerroAccesorio = [
     precio: 2500,
     stock: 12,
     subcategoria: 'Accesorios',
-    id: '05',
+    id: '5',
   },
 
   {
@@ -61,7 +61,7 @@ const stockPerroAccesorio = [
     precio: 2000,
     stock: 20,
     subcategoria: 'Accesorios',
-    id: '06',
+    id: '6',
   },
 
   {
@@ -72,7 +72,7 @@ const stockPerroAccesorio = [
     precio: 2000,
     stock: 20,
     subcategoria: 'Accesorios',
-    id: '07',
+    id: '7',
   },
 
   {
@@ -83,7 +83,7 @@ const stockPerroAccesorio = [
     precio: 1200,
     stock: 50,
     subcategoria: 'Accesorios',
-    id: '08',
+    id: '8',
   },
 
   {
@@ -94,7 +94,7 @@ const stockPerroAccesorio = [
     precio: 2500,
     stock: 12,
     subcategoria: 'Accesorios',
-    id: '09',
+    id: '9',
   },
 
   {

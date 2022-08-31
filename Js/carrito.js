@@ -1,14 +1,13 @@
 //Recuperamos del local storage el array del carrito y lo parseamos para poder operar con el mismo
 let carritoRecuperado = localStorage.getItem('CarritoJson');
 carritoRecuperado = JSON.parse(carritoRecuperado);
-let count = 0;
 //creamos y canturamos la variable con el selector correspondiente del contenor donde vamos a renderizar el carrito
 let contenedorCarrito = document.querySelector('#carrito__container');
 
 //Funcion en la que recorremos el array para crear por cada producto una card con sus respectivas clases para asignar estilos con scss y asi denderizar los productos del carrito
 const RenderCarrito = () => {
+  contenedorCarrito.innerHTML= "";
   carritoRecuperado.forEach((prod) => {
-    count++;
     const div = document.createElement('div');
     div.classList.add('card');
     div.classList.add('carta1');
@@ -30,9 +29,7 @@ const RenderCarrito = () => {
 RenderCarrito();
 
 //funcion para eliminar productos del carrito
-  const eliminarDelCarrito = (prodId) => {
-    let item = carritoRecuperado.find((prod) => prod.id === prodId);
-    const indice = carritoRecuperado.indexOf(item)
-    carritoRecuperado.splice(indice,1)
-    console.log(item,indice)
+  let eliminarDelCarrito = (id) => {
+    carritoRecuperado = carritoRecuperado.filter((prod) => prod.id != id)
+    RenderCarrito();
   };
