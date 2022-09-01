@@ -5,6 +5,7 @@ const stockPerroAccesorio = [
     descripcion: 'Peluche con cuerpo forrado con silicona',
     img: '/src/Multimedia/Images/AccesoriosPerro/CanCatMonstruosPelucheParaPerros.jpeg',
     precio: 2500,
+    cantidad: 1,
     stock: 12,
     subcategoria: 'Accesorios',
     id: '1',
@@ -16,6 +17,7 @@ const stockPerroAccesorio = [
     descripcion: 'Arnés para perro Minnie ajustable.',
     img: '/src/Multimedia/Images/AccesoriosPerro/DixonArnésparaPerroMinnie.jpeg',
     precio: 2000,
+    cantidad: 1,
     stock: 20,
     subcategoria: 'Accesorios',
     id: '2',
@@ -27,6 +29,7 @@ const stockPerroAccesorio = [
     descripcion: 'Resistente gracias a la doble capa de nylon. Anilla en zona del agarre: útil para dispensador bolsas de caca.',
     img: '/src/Multimedia/Images/AccesoriosPerro/DixonCorreaMinnie.jpeg',
     precio: 2000,
+    cantidad: 1,
     stock: 20,
     subcategoria: 'Accesorios',
     id: '3',
@@ -38,6 +41,7 @@ const stockPerroAccesorio = [
     descripcion: 'Bolsas Bio-degradables Earth Rated Bolsas extra largas y extra fuertes para proteger sus manos.',
     img: '/src/Multimedia/Images/AccesoriosPerro/EarthRatedBolsaDesperdicio.jpeg',
     precio: 1200,
+    cantidad: 1,
     stock: 50,
     subcategoria: 'Accesorios',
     id: '4',
@@ -48,6 +52,7 @@ const stockPerroAccesorio = [
     descripcion: 'Peluche con cuerpo forrado con silicona',
     img: '/src/Multimedia/Images/AccesoriosPerro/CanCatMonstruosPelucheParaPerros.jpeg',
     precio: 2500,
+    cantidad: 1,
     stock: 12,
     subcategoria: 'Accesorios',
     id: '5',
@@ -59,6 +64,7 @@ const stockPerroAccesorio = [
     descripcion: 'Arnés para perro Minnie ajustable.',
     img: '/src/Multimedia/Images/AccesoriosPerro/DixonArnésparaPerroMinnie.jpeg',
     precio: 2000,
+    cantidad: 1,
     stock: 20,
     subcategoria: 'Accesorios',
     id: '6',
@@ -70,6 +76,7 @@ const stockPerroAccesorio = [
     descripcion: 'Resistente gracias a la doble capa de nylon. Anilla en zona del agarre: útil para dispensador bolsas de caca.',
     img: '/src/Multimedia/Images/AccesoriosPerro/DixonCorreaMinnie.jpeg',
     precio: 2000,
+    cantidad: 1,
     stock: 20,
     subcategoria: 'Accesorios',
     id: '7',
@@ -81,6 +88,7 @@ const stockPerroAccesorio = [
     descripcion: 'Bolsas Bio-degradables Earth Rated Bolsas extra largas y extra fuertes para proteger sus manos.',
     img: '/src/Multimedia/Images/AccesoriosPerro/EarthRatedBolsaDesperdicio.jpeg',
     precio: 1200,
+    cantidad: 1,
     stock: 50,
     subcategoria: 'Accesorios',
     id: '8',
@@ -92,6 +100,7 @@ const stockPerroAccesorio = [
     descripcion: 'Peluche con cuerpo forrado con silicona',
     img: '/src/Multimedia/Images/AccesoriosPerro/CanCatMonstruosPelucheParaPerros.jpeg',
     precio: 2500,
+    cantidad: 1,
     stock: 12,
     subcategoria: 'Accesorios',
     id: '9',
@@ -103,6 +112,7 @@ const stockPerroAccesorio = [
     descripcion: 'Arnés para perro Minnie ajustable.',
     img: '/src/Multimedia/Images/AccesoriosPerro/DixonArnésparaPerroMinnie.jpeg',
     precio: 2000,
+    cantidad: 1,
     stock: 20,
     subcategoria: 'Accesorios',
     id: '10',
@@ -114,6 +124,7 @@ const stockPerroAccesorio = [
     descripcion: 'Resistente gracias a la doble capa de nylon. Anilla en zona del agarre: útil para dispensador bolsas de caca.',
     img: '/src/Multimedia/Images/AccesoriosPerro/DixonCorreaMinnie.jpeg',
     precio: 2000,
+    cantidad: 1,
     stock: 20,
     subcategoria: 'Accesorios',
     id: '11',
@@ -125,6 +136,7 @@ const stockPerroAccesorio = [
     descripcion: 'Bolsas Bio-degradables Earth Rated Bolsas extra largas y extra fuertes para proteger sus manos.',
     img: '/src/Multimedia/Images/AccesoriosPerro/EarthRatedBolsaDesperdicio.jpeg',
     precio: 1200,
+    cantidad: 1,
     stock: 50,
     subcategoria: 'Accesorios',
     id: '12',
@@ -136,6 +148,7 @@ const stockPerroAccesorio = [
     descripcion: 'Peluche con cuerpo forrado con silicona',
     img: '/src/Multimedia/Images/AccesoriosPerro/CanCatMonstruosPelucheParaPerros.jpeg',
     precio: 2500,
+    cantidad: 1,
     stock: 12,
     subcategoria: 'Accesorios',
     id: '13',
@@ -147,6 +160,7 @@ const stockPerroAccesorio = [
     descripcion: 'Arnés para perro Minnie ajustable.',
     img: '/src/Multimedia/Images/AccesoriosPerro/DixonArnésparaPerroMinnie.jpeg',
     precio: 2000,
+    cantidad: 1,
     stock: 20,
     subcategoria: 'Accesorios',
     id: '14',
@@ -158,6 +172,7 @@ const stockPerroAccesorio = [
     descripcion: 'Resistente gracias a la doble capa de nylon. Anilla en zona del agarre: útil para dispensador bolsas de caca.',
     img: '/src/Multimedia/Images/AccesoriosPerro/DixonCorreaMinnie.jpeg',
     precio: 2000,
+    cantidad: 1,
     stock: 20,
     subcategoria: 'Accesorios',
     id: '15',
@@ -169,6 +184,7 @@ const stockPerroAccesorio = [
     descripcion: 'Bolsas Bio-degradables Earth Rated Bolsas extra largas y extra fuertes para proteger sus manos.',
     img: '/src/Multimedia/Images/AccesoriosPerro/EarthRatedBolsaDesperdicio.jpeg',
     precio: 1200,
+    cantidad: 1,
     stock: 50,
     subcategoria: 'Accesorios',
     id: '16',
@@ -187,14 +203,23 @@ const HandleJsonStorage = (array) => {
 };
 //funcion para agregar productos al carrito
 const agregarAlCarrito = (prodId) => {
-  const item = stockPerroAccesorio.find((prod) => prod.id === prodId);
-  carrito.push(item);
+  const existe = carrito.some(prod => prod.id === prodId)
+  if(existe){
+    const prod = carrito.map(prod => {
+      if (prod.id === prodId){
+        prod.cantidad++
+      }
+    })
+  } else{
+    const item = stockPerroAccesorio.find((prod) => prod.id === prodId);
+    carrito.push(item);
+  }
 };
 
 // fin Funciones
 
 // recorremos array con forEach para asi crear las card y renderizar cada producto del array en el dom
-const RenderCarrito = () =>{
+const RenderProd= () =>{
 stockPerroAccesorio.forEach((Producto) => {
   const div = document.createElement('div');
   div.classList.add('card');
@@ -204,8 +229,7 @@ stockPerroAccesorio.forEach((Producto) => {
         <div class="card-body">
         <h6 class="card-title">${Producto.nombre}</h6>
         <p class="font-text">${Producto.descripcion}</p>
-        <p>Precio:
-        ${Producto.precio}$</p>
+        <p>Precio:${Producto.precio}$</p>
         <a href="#" class="btn btn-primary" id="agregar${Producto.id}">Agregar al carrito</a>
         </div>
     `;
@@ -219,4 +243,4 @@ stockPerroAccesorio.forEach((Producto) => {
   });
 })};
 
-RenderCarrito();
+RenderProd();
