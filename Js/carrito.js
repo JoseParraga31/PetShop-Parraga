@@ -30,5 +30,14 @@ RenderCarrito();
 //funcion para eliminar productos del carrito
 let eliminarDelCarrito = (id) => {
   carritoRecuperado = carritoRecuperado.filter((prod) => prod.id != id);
+  Toastify({
+    text: "¡Eliminaste un producto del carrito",
+    duration: 3000,
+    gravity: 'top',
+    position: 'right',
+    style: {
+        background: "#ff6961"
+    }
+}).showToast();
   RenderCarrito();
 };

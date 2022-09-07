@@ -203,28 +203,37 @@ const HandleJsonStorage = (array) => {
 };
 //funcion para agregar productos al carrito
 const agregarAlCarrito = (prodId) => {
-  const existe = carrito.some(prod => prod.id === prodId)
-  if(existe){
-    const prod = carrito.map(prod => {
-      if (prod.id === prodId){
-        prod.cantidad++
+  const existe = carrito.some((prod) => prod.id === prodId);
+  if (existe) {
+    const prod = carrito.map((prod) => {
+      if (prod.id === prodId) {
+        prod.cantidad++;
       }
-    })
-  } else{
+    });
+  } else {
     const item = stockPerroAccesorio.find((prod) => prod.id === prodId);
     carrito.push(item);
   }
+  Toastify({
+    text: '¡Agregaste un producto al carrito!',
+    duration: 3000,
+    gravity: 'top',
+    position: 'right',
+    style: {
+      background: '#ff6961',
+    },
+  }).showToast();
 };
 
 // fin Funciones
 
 // recorremos array con forEach para asi crear las card y renderizar cada producto del array en el dom
-const RenderProd= () =>{
-stockPerroAccesorio.forEach((Producto) => {
-  const div = document.createElement('div');
-  div.classList.add('card');
-  div.classList.add('carta1');
-  div.innerHTML = `
+const RenderProd = () => {
+  stockPerroAccesorio.forEach((Producto) => {
+    const div = document.createElement('div');
+    div.classList.add('card');
+    div.classList.add('carta1');
+    div.innerHTML = `
   <img src="${Producto.img}"class="card-img-top img_card" alt="#">
         <div class="card-body">
         <h6 class="card-title">${Producto.nombre}</h6>
@@ -233,14 +242,15 @@ stockPerroAccesorio.forEach((Producto) => {
         <a href="#" class="btn btn-primary" id="agregar${Producto.id}">Agregar al carrito</a>
         </div>
     `;
-  //agregamos el div creado a la variable del selector, en este caso productos container
-  productosContainer.appendChild(div);
-  //capturamos variable para el boton y ejecutamos la funcion de agregar al carrito ligada al evento click
-  const boton = document.querySelector(`#agregar${Producto.id}`);
-  boton.addEventListener('click', () => {
-    agregarAlCarrito(Producto.id);
-    HandleJsonStorage(carrito);
+    //agregamos el div creado a la variable del selector, en este caso productos container
+    productosContainer.appendChild(div);
+    //capturamos variable para el boton y ejecutamos la funcion de agregar al carrito ligada al evento click
+    const boton = document.querySelector(`#agregar${Producto.id}`);
+    boton.addEventListener('click', () => {
+      agregarAlCarrito(Producto.id);
+      HandleJsonStorage(carrito);
+    });
   });
-})};
+};
 
 RenderProd();
