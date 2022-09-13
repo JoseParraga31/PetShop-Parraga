@@ -32,7 +32,7 @@ let eliminarDelCarrito = (id) => {
   carritoRecuperado = carritoRecuperado.filter((prod) => prod.id != id);
   Toastify({
     text: "¡Eliminaste un producto del carrito",
-    duration: 3000,
+    duration: 1000,
     gravity: 'top',
     position: 'right',
     style: {
