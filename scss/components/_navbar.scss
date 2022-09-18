@@ -5,4 +5,12 @@
     border-radius: map-get($borders-standard, borders-radious );
     border: map-get($borders-standard,borders);
 }
-/*Fin estilos navbar*/
+
+.carrito--logo--style{
+display: flex;
+    .contador--carrito--style{
+        display: flex;
+        font-size: 1.5em;
+    
+    }/*Fin estilos navbar*/
+}

@@ -3,7 +3,15 @@ let carritoRecuperado = localStorage.getItem('CarritoJson');
 carritoRecuperado = JSON.parse(carritoRecuperado);
 //creamos y canturamos la variable con el selector correspondiente del contenor donde vamos a renderizar el carrito
 let contenedorCarrito = document.querySelector('#carrito__container');
+//capturamos y exportamos la variable que referenciara la cantidad de productos en el contador
+let contadorCarrito = document.querySelector("#Contador__carrito");
+console.log(contadorCarrito.innerHTML);
 
+//funcion para parcear a json y enviar el array al localStorage
+const HandleJsonStorage = (array) => {
+  let carritoJson = JSON.stringify(array);
+  localStorage.setItem('CarritoJson', carritoJson);
+};
 //Funcion en la que recorremos el array para crear por cada producto una card con sus respectivas clases para asignar estilos con scss y asi denderizar los productos del carrito
 const RenderCarrito = () => {
   contenedorCarrito.innerHTML = '';
@@ -18,11 +26,14 @@ const RenderCarrito = () => {
     <p class="font-text">${prod.descripcion}</p>
     <p>Cantidad: ${prod.cantidad}</p>
     <p>Precio:${prod.precio}$</p>
+    </div>    
     <button onclick="eliminarDelCarrito(${prod.id})" class="btn btn-primary">Eliminar</button>
-    `;
+   
+    </div>`;
     // agregamos el div con la informacion del prodcto al contenedorcarrito para renderizarlo en el dom
     contenedorCarrito.appendChild(div);
   });
+  contadorCarrito.innerHTML = carritoRecuperado.length
 };
 
 RenderCarrito();
@@ -39,5 +50,6 @@ let eliminarDelCarrito = (id) => {
         background: "#ff6961"
     }
 }).showToast();
+  HandleJsonStorage(carritoRecuperado)
   RenderCarrito();
 };

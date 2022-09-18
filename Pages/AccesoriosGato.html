@@ -17,6 +17,7 @@
     <meta property="og:image" content="https://oliverysupandilla.vercel.app/src/Multimedia/Images/oliver-pelota.jpeg">
     <link rel="shortcut icon" href="/src/Multimedia/Images/favicons/perro-delante-de-un-hombre.png" type="image/x-icon">
     <!--CSS-->
+    <link href='https://unpkg.com/boxicons@2.1.3/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/CSS/style.css">
     <title>Accesorios Gato|Oliver y su Pandilla</title>
 </head>
@@ -174,79 +175,15 @@
             <!--productos de la tienda-->
             <!--Seccion #1-->             
             <section class="container productosP">
-                <section class="row productos-tienda">
-                    <!--producto #1-->
-                    <div class="card carta1" style="width: 14rem;">
-                        <img src="/src/Multimedia/Images/AccesoriosGato/CanCatCatToySogaConPlumaParaGato.jpeg" class="card-img-top" alt="soga con pluma para gato">
-                        <div class="card-body">
-                        <h6 class="card-title">Can Cat Cat Toy Soga Con Pluma Para Gato</h6>
-                        <p class="font-text">Las Cañitas Cancat están diseñadas para crear el vínculo de juego entre los humanos y sus mascotas.</p>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                    <!--fin producto #1-->
-                    <!--producto #2-->  
-                    <div class="card carta1" style="width: 14rem;">
-                        <img src="/src/Multimedia/Images/AccesoriosGato/CanCatGatoConPlumaParaGato.jpeg" class="card-img-top" alt="juguetes con plumas para gatos">
-                        <div class="card-body">
-                        <h6 class="card-title">Can Cat Gato Con Pluma Para Gato</h6>
-                        <p class="font-text">100% diversion. Antistress</p>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                    <!--fin producto #2-->
-                    <!--producto #3-->
-                    <div class="card carta1" style="width: 14rem;">
-                        <img src="/src/Multimedia/Images/AccesoriosGato/CanCatRatónSuaveConColaParaGato.jpeg" class="card-img-top" alt="raton suave para gato">
-                        <div class="card-body">
-                        <h6 class="card-title">Can Cat Ratón Suave Con Cola Para Gato</h6>
-                        <p class="font-text">Can Cat Ojito Plush Con Plumas mantiene activos a nuestros gatos, pudiendo mejorar su salud y reducir su stress</p>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                    <!--fin producto #3-->
-                    <!--producto #4--> 
-                </section>
-                <!--fin Seccion #1-->
-                <!--Seccion #2-->
-                <section class="row productos-tienda espacio">
-                    <!--producto #5-->
-                    <div class="card carta1" style="width: 14rem;">
-                        <img src="/src/Multimedia/Images/AccesoriosGato/MillexGigwiRatónRellenablecon3bolsascatnip.jpeg" class="card-img-top" alt="raton rellenable para Gatos">
-                        <div class="card-body">
-                        <h6 class="card-title">Millex Gigwi Ratón Rellenable con 3 bolsas catnip</h6>
-                        <p class="font-text">Gigwi Ratón Rellenable con 3 bolsas catnip    
-                        </p>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                    <!--fin producto #5-->
-                    <!--producto #6-->
-                    <div class="card carta1" style="width: 14rem;">
-                        <img src="/src/Multimedia/Images/AccesoriosGato/MillexComederoInoxidableDobleFeed14cm.jpeg" class="card-img-top" alt="abrigo stars war perro">
-                        <div class="card-body">
-                        <h6 class="card-title">Millex Comedero Inoxidable Doble Feed x 14 cm.</h6>
-                        <p class="font-text">Ideal para el agua y el concentrado de tu mascota.</p>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                    <!--fin producto #6-->
-                    <!--producto #7-->
-                    <div class="card carta1" style="width: 14rem;">
-                        <img src="/src/Multimedia/Images/AccesoriosGato/MillexGigwiTucanMelodyconSonido.jpeg" class="card-img-top" alt="arnes para perro">
-                        <div class="card-body">
-                        <h6 class="card-title">Millex Gigwi Tucan Melody con Sonido
-                        </h6>
-                        <p class="font-text">Gigwi Tucan Melody con Sonido</p>
-                        <a href="#" class="btn btn-primary">Agregar al carrito</a>
-                        </div>
-                    </div>
-                    <!--fin producto #7-->
-                </section>
-                <!--Seccion #2-->
+
+                <div class="btnUpDown">
+                    <button class="downArrow--btn boton2" id="downArrowbtn"><img src="/src/assets/downArrow.svg" alt=""></button>
+                    <Span id="Cantidad__producto">0</Span>
+                    <button class="upArrow--btn boton2" id="upArrowbtn"><img src="/src/assets/upArrow.svg" alt=""></button>
+                </div>
+
             </section>
-            <!-- fin productos de la tienda-->
-        </section>
+
     </main>
     <footer>
         <!--Redes Sociales-->
@@ -300,6 +237,7 @@
             </div>
         </div>    
     </footer>
+    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
     <script src="/Js/ProductosJs.js"></script>
             <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
