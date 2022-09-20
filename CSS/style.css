@@ -1097,14 +1097,35 @@ h6 span {
   font-size: 16px;
 }
 
-.boton2 {
-  width: 2em;
-  background-color: #fdfd96;
-  border-radius: 0.5em;
-  box-shadow: 0 2px 4px 0 rgb(21, 21, 21);
+.contenedor__btn2--style {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: none;
 }
-.boton2:hover {
-  background-color: rgba(253, 253, 150, 0.631372549);
+.contenedor__btn2--style .boton2 {
+  width: 1.3em;
+  height: 1.8em;
+  background-color: #fdfd96;
+  border-radius: 0.4em;
+  box-shadow: 0 2px 4px 1px rgb(21, 21, 21);
+  font-size: 1em;
+  text-align: center;
+}
+.contenedor__btn2--style .boton2:hover {
+  background-color: rgba(243, 253, 150, 0.768627451);
+}
+.contenedor__btn2--style .boton2:active {
+  font-size: 0.9em;
+}
+
+.cantidad--producto {
+  padding: 0.5em;
+}
+
+.contenedor__eliminar--style {
+  display: flex;
+  justify-content: center;
+  flex-direction: none;
 }
 
 /*# sourceMappingURL=style.css.map */

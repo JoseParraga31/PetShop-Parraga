@@ -28,13 +28,30 @@
         font-size: 16px;
     }
 }
-
-.boton2{
-    width: 2em;
-    background-color: #fdfd96;
-    border-radius: 0.5em;
-    box-shadow: 0 2px 4px 0 rgb(21 21 21);
-    &:hover{
-        background-color:#fdfd96a1;
-    }
-}   
+.contenedor__btn2--style{
+    @include Flexbox(flex,space-between,none);
+    .boton2{
+        width: 1.3em;
+        height: 1.8em;
+        background-color: #fdfd96;
+        border-radius: 0.4em;
+        box-shadow: 0 2px 4px 1px rgb(21 21 21);
+        font-size: 1em;
+        text-align: center;
+        
+        &:hover{
+            background-color:#f3fd96c4;
+            
+        }
+        &:active{
+            font-size: 0.9em;
+            
+        }
+    }  
+}
+.cantidad--producto{
+    padding: 0.5em;
+}
+.contenedor__eliminar--style{
+    @include Flexbox(flex,center,none);
+}

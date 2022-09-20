@@ -24,11 +24,17 @@ const RenderCarrito = () => {
     <div class="card-body">
     <h6 class="card-title">${prod.nombre}</h6>
     <p class="font-text">${prod.descripcion}</p>
-    <p>Cantidad: ${prod.cantidad}</p>
-    <p>Precio:${prod.precio}$</p>
-    </div>    
-    <button onclick="eliminarDelCarrito(${prod.id})" class="btn btn-primary">Eliminar</button>
-   
+    <div class="contenedor__btn2--style"> 
+    <p>Cantidad:</p>
+    <div class="btnUpDown">
+        <button class="downArrow--btn boton2" id="btn__suma" onclick="btnSuma(${prod.id})">+</button>
+        <Span class="cantidad--producto" id="Cantidad__producto">${prod.cantidad}</Span>
+        <button class="upArrow--btn boton2" id="btn__resta" onclick="btnResta(${prod.id})">-</button>
+      </div>
+    </div>
+    <p>Precio: ${prod.precio}$</p>
+    <div class="contenedor__eliminar--style" >
+      <button onclick="eliminarDelCarrito(${prod.id})" class="btn btn-primary btn__eliminar--style">Eliminar</button>
     </div>`;
     // agregamos el div con la informacion del prodcto al contenedorcarrito para renderizarlo en el dom
     contenedorCarrito.appendChild(div);
@@ -53,3 +59,19 @@ let eliminarDelCarrito = (id) => {
   HandleJsonStorage(carritoRecuperado)
   RenderCarrito();
 };
+
+let btnSuma = (prodId) =>{
+    const prod = carritoRecuperado.map((prod) => {
+        prod.cantidad++;
+        RenderCarrito();
+        console.log(prod.cantidad);
+      }
+    )};
+
+  let btnResta = (prodId) =>{
+      const prod = carritoRecuperado.map((prod) => {
+          prod.cantidad--;
+          RenderCarrito();
+          console.log(prod.cantidad);
+        }
+      )};
