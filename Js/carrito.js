@@ -5,7 +5,7 @@ carritoRecuperado = JSON.parse(carritoRecuperado);
 let contenedorCarrito = document.querySelector('#carrito__container');
 //capturamos y exportamos la variable que referenciara la cantidad de productos en el contador
 let contadorCarrito = document.querySelector("#Contador__carrito");
-console.log(contadorCarrito.innerHTML);
+
 
 //funcion para parcear a json y enviar el array al localStorage
 const HandleJsonStorage = (array) => {
@@ -22,19 +22,15 @@ const RenderCarrito = () => {
     div.innerHTML = `
     <img src="${prod.img}"class="card-img-top img_card" alt="#">
     <div class="card-body">
-    <h6 class="card-title">${prod.nombre}</h6>
-    <p class="font-text">${prod.descripcion}</p>
-    <div class="contenedor__btn2--style"> 
-    <p>Cantidad:</p>
-    <div class="btnUpDown">
-        <button class="downArrow--btn boton2" id="btn__suma" onclick="btnSuma(${prod.id})">+</button>
-        <Span class="cantidad--producto" id="Cantidad__producto">${prod.cantidad}</Span>
-        <button class="upArrow--btn boton2" id="btn__resta" onclick="btnResta(${prod.id})">-</button>
+      <h6 class="card-title">${prod.nombre}</h6>
+      <p class="font-text">${prod.descripcion}</p>
+      <div class="contenedor__btn2--style"> 
+      <p>Cantidad: ${prod.cantidad}</p>
       </div>
-    </div>
-    <p>Precio: ${prod.precio}$</p>
-    <div class="contenedor__eliminar--style" >
-      <button onclick="eliminarDelCarrito(${prod.id})" class="btn btn-primary btn__eliminar--style">Eliminar</button>
+      <p>Precio: ${prod.precio}$</p>
+      <div class="contenedor__eliminar--style" >
+      <button onclick="agregarProducto(${prod.id})" class="btn btn-primary btn__eliminar--style">Agregar</button>
+        <button onclick="eliminarDelCarrito(${prod.id})" class="btn btn-primary btn__eliminar--style">Eliminar</button>
     </div>`;
     // agregamos el div con la informacion del prodcto al contenedorcarrito para renderizarlo en el dom
     contenedorCarrito.appendChild(div);
@@ -45,33 +41,49 @@ const RenderCarrito = () => {
 RenderCarrito();
 
 //funcion para eliminar productos del carrito
-let eliminarDelCarrito = (id) => {
-  carritoRecuperado = carritoRecuperado.filter((prod) => prod.id != id);
-  Toastify({
-    text: "¡Eliminaste un producto del carrito",
-    duration: 1000,
-    gravity: 'top',
-    position: 'right',
-    style: {
-        background: "#ff6961"
-    }
-}).showToast();
-  HandleJsonStorage(carritoRecuperado)
-  RenderCarrito();
-};
-
-let btnSuma = (prodId) =>{
+let eliminarDelCarrito = (prodid) => {
+  const existe = carritoRecuperado.some((prod) => prod.id == prodid);
+  console.log(existe);
+  if (existe) {
     const prod = carritoRecuperado.map((prod) => {
-        prod.cantidad++;
+      if (prod.id == prodid) {
+        prod.cantidad--;
+        if(prod.cantidad < 1)
+        carritoRecuperado = carritoRecuperado.filter((prod) => prod.id != prodid);
+        Toastify({
+          text: "¡Eliminaste un producto del carrito",
+          duration: 1000,
+          gravity: 'top',
+          position: 'right',
+          style: {
+              background: "#ff6961"
+          }
+      }).showToast();
+        HandleJsonStorage(carritoRecuperado)
         RenderCarrito();
-        console.log(prod.cantidad);
       }
-    )};
+      HandleJsonStorage(carritoRecuperado)
+      RenderCarrito()
+      console.log(prod.cantidad);
+    });
+  }}
+  
+let agregarProducto = (prodid) =>{
+  console.log(prodid);
+  const existe = carritoRecuperado.some((prod) => prod.id == prodid);
+  console.log(existe);
+  if (existe) {
+    const prod = carritoRecuperado.map((prod) => {
+      if (prod.id == prodid) {
+        prod.cantidad++;
+        
+      }
+      HandleJsonStorage(carritoRecuperado)
+      RenderCarrito()
+      console.log(prod.cantidad);
+    });
+  }
 
-  let btnResta = (prodId) =>{
-      const prod = carritoRecuperado.map((prod) => {
-          prod.cantidad--;
-          RenderCarrito();
-          console.log(prod.cantidad);
-        }
-      )};
+
+
+}

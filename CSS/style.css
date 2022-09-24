@@ -1124,8 +1124,13 @@ h6 span {
 
 .contenedor__eliminar--style {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: none;
+}
+
+.btn__eliminar--style {
+  width: 40%;
+  font-size: 0.6em;
 }
 
 /*# sourceMappingURL=style.css.map */

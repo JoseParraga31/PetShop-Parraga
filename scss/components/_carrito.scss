@@ -53,5 +53,11 @@
     padding: 0.5em;
 }
 .contenedor__eliminar--style{
-    @include Flexbox(flex,center,none);
+@include Flexbox(flex,space-between,none);
+}
+
+.btn__eliminar--style{
+    width: 40%;
+    font-size: 0.6em;
+    
 }
