@@ -2,7 +2,6 @@
 // console.log(stockPerroAccesorioJson);
 let productosContainer = document.querySelector('#Productos_container');
 let contadorCarrito = document.querySelector('#Contador__carrito');
-console.log(contadorCarrito.innerHTML);
 let carrito = [];
 
 // Funciones

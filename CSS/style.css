@@ -50,6 +50,9 @@
   padding-top: 1.5em;
 }
 .beneficios-container .beneficios {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: none;
   width: 80%;
   background-color: #EDEDED;
   border-radius: 2em;
@@ -95,18 +98,24 @@
   padding: 0.5em;
 }
 
-.cachorros-container {
+.frase__container {
+  width: 100%;
   margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: none;
 }
 
-.cachorros {
+.frase {
+  width: 80%;
   background-color: #fdfd96;
-  padding: 3em 3em 3em 3em;
+  padding: 1em 1em 0 1em;
   border-radius: 2em;
   border: 2px solid #212121;
+  text-align: center;
 }
-.cachorros .carta1:hover {
-  border: #77dd77 0.2em solid;
+.frase h2 {
+  margin-top: 0.3em;
 }
 
 /*fin estilos seccion cachorros*/

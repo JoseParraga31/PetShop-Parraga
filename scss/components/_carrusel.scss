@@ -1,3 +1,5 @@
+@import "../base/mixins";
+
 /*estilos seccion carrusel*/
     /*queries seccion carrusel*/
 @media screen  and (max-width: 490px){
@@ -6,7 +8,7 @@
         margin-left: 0.1em;  
     } 
 }
- /*fin queries seccion carrusel*/
+/*fin queries seccion carrusel*/
 .border-carrusel{
     background-color: #77dd77;
     border: map-get($borders-standard,borders);
@@ -24,6 +26,7 @@
     margin-left: 8em;
     padding-top: 1.5em;
     .beneficios{
+        @include Flexbox(flex,space-between, none);
         width: 80%;
         background-color: #EDEDED;
         border-radius: map-get($borders-standard, borders-radious);
