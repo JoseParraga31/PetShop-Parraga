@@ -50,14 +50,14 @@ const RenderProd = () => {
         div.classList.add('card');
         div.classList.add('carta1');
         div.innerHTML = `
-    <img src="${Producto.img}"class="card-img-top img_card" alt="#">
+          <img src="${Producto.img}"class="card-img-top img_card" alt="#">
           <div class="card-body">
           <h6 class="card-title">${Producto.nombre}</h6>
           <p class="font-text">${Producto.descripcion}</p>
           <p>Precio:${Producto.precio}$</p>
           <a href="#" class="btn btn-primary" id="agregar${Producto.id}">Agregar al carrito</a>
           </div>
-      `;
+          `;
         //agregamos el div creado a la variable del selector, en este caso productos container
         productosContainer.appendChild(div);
         //capturamos variable para el boton y ejecutamos la funcion de agregar al carrito ligada al evento click
@@ -70,18 +70,15 @@ const RenderProd = () => {
           }, 0500);
           setTimeout(() => {
             let carritoRecuperado1 = localStorage.getItem('CarritoJson');
-              carritoRecuperado1 = JSON.parse(carritoRecuperado1);
-              contadorCarrito.innerHTML = carritoRecuperado1.length;
+            carritoRecuperado1 = JSON.parse(carritoRecuperado1);
+            contadorCarrito.innerHTML = carritoRecuperado1.length;
           }, 0500);
-
         });
       });
     })
     .catch((e) => {
       console.log(e);
     });
-    
 };
 
 RenderProd();
-  
