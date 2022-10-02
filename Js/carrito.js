@@ -4,8 +4,8 @@ carritoRecuperado = JSON.parse(carritoRecuperado);
 //creamos y canturamos la variable con el selector correspondiente del contenor donde vamos a renderizar el carrito
 let contenedorCarrito = document.querySelector('#carrito__container');
 //capturamos y exportamos la variable que referenciara la cantidad de productos en el contador
-let contadorCarrito = document.querySelector("#Contador__carrito");
-
+let contadorCarrito = document.querySelector('#Contador__carrito');
+let PrecioFinal = document.querySelector('#total__pago');
 
 //funcion para parcear a json y enviar el array al localStorage
 const HandleJsonStorage = (array) => {
@@ -27,63 +27,74 @@ const RenderCarrito = () => {
       <div class="contenedor__btn2--style"> 
       <p>Cantidad: ${prod.cantidad}</p>
       </div>
-      <p>Precio: ${prod.precio}$</p>
+      <p>Precio Unitario: ${prod.precio}$</p>
+      <p>Precio total: ${prod.precioTotal}$</p>
       <div class="contenedor__eliminar--style" >
       <button onclick="agregarProducto(${prod.id})" class="btn btn-primary btn__eliminar--style">Agregar</button>
         <button onclick="eliminarDelCarrito(${prod.id})" class="btn btn-primary btn__eliminar--style">Eliminar</button>
     </div>`;
     // agregamos el div con la informacion del prodcto al contenedorcarrito para renderizarlo en el dom
     contenedorCarrito.appendChild(div);
+    contadorCarrito.innerHTML = carritoRecuperado.length;
   });
-  contadorCarrito.innerHTML = carritoRecuperado.length
 };
 
 RenderCarrito();
-
 //funcion para eliminar productos del carrito
 let eliminarDelCarrito = (prodid) => {
   const existe = carritoRecuperado.some((prod) => prod.id == prodid);
-  console.log(existe);
   if (existe) {
     const prod = carritoRecuperado.map((prod) => {
       if (prod.id == prodid) {
         prod.cantidad--;
-        if(prod.cantidad < 1)
-        carritoRecuperado = carritoRecuperado.filter((prod) => prod.id != prodid);
+        HandleJsonStorage(carritoRecuperado);
+        RenderCarrito();
         Toastify({
-          text: "¡Eliminaste un producto del carrito",
-          duration: 1000,
+          text: `¡Eliminaste una unidad de ${prod.nombre}!`,
+          duration: 2000,
           gravity: 'top',
           position: 'right',
           style: {
-              background: "#ff6961"
-          }
-      }).showToast();
-        HandleJsonStorage(carritoRecuperado)
-        RenderCarrito();
+            background: '#ff6961',
+          },
+        }).showToast();
+        if (prod.cantidad < 1) {
+          carritoRecuperado = carritoRecuperado.filter((prod) => prod.id != prodid);
+          Toastify({
+            text: `¡Eliminaste ${prod.nombre} del carrito!`,
+            duration: 2000,
+            gravity: 'top',
+            position: 'right',
+            style: {
+              background: '#ff6961',
+            },
+          }).showToast();
+          HandleJsonStorage(carritoRecuperado);
+          RenderCarrito();
+        }
       }
-      HandleJsonStorage(carritoRecuperado)
-      RenderCarrito()
-      console.log(prod.cantidad);
     });
-  }}
-  
-let agregarProducto = (prodid) =>{
-  console.log(prodid);
+  }
+};
+
+let agregarProducto = (prodid) => {
   const existe = carritoRecuperado.some((prod) => prod.id == prodid);
-  console.log(existe);
   if (existe) {
     const prod = carritoRecuperado.map((prod) => {
       if (prod.id == prodid) {
         prod.cantidad++;
-        
+        Toastify({
+          text: `¡Agregaste una unidad de ${prod.nombre}!`,
+          duration: 2000,
+          gravity: 'top',
+          position: 'right',
+          style: {
+            background: '#ff6961',
+          },
+        }).showToast();
       }
-      HandleJsonStorage(carritoRecuperado)
-      RenderCarrito()
-      console.log(prod.cantidad);
+      HandleJsonStorage(carritoRecuperado);
+      RenderCarrito();
     });
   }
-
-
-
-}
+};

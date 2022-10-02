@@ -32,7 +32,10 @@
     }  
 }
  /*Fin Queries seccion mas bendido*/   
-    
+.productos--container{
+    @include Flexbox(flex,center, none);
+}
+
 .h2-container-promo{
     @include Flexbox(flex,center, none);
     @extend %espacio;                                                                                                              
@@ -63,5 +66,5 @@
         &:hover{
             background-color:#9ec6f8;
         }
-    }   
+    }
 /*Fin estilos seccion mas vendido*/

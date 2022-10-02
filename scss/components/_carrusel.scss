@@ -23,11 +23,12 @@
 /*estilos seccion menu de beneficios*/
 .beneficios-container{
     width: 100%;
-    margin-left: 8em;
+    @include Flexbox(flex,center, none);
     padding-top: 1.5em;
     .beneficios{
         @include Flexbox(flex,space-between, none);
         width: 80%;
+        padding-top: 1em;
         background-color: #EDEDED;
         border-radius: map-get($borders-standard, borders-radious);
         border: map-get($borders-standard,borders);

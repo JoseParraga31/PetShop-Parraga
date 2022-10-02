@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 14px;
+  font-size: 1em;
   color: #212121;
   box-sizing: border-box;
 }
@@ -16,15 +16,20 @@
   border: 2px solid #212121;
 }
 
+.registro {
+  margin-left: 3em;
+}
+
 .carrito--logo--style {
+  margin-left: 3em;
   display: flex;
-  /*Fin estilos navbar*/
 }
 .carrito--logo--style .contador--carrito--style {
   display: flex;
   font-size: 1.5em;
 }
 
+/*Fin estilos navbar*/
 /*componets/carrusel*/
 /*estilos seccion carrusel*/
 /*queries seccion carrusel*/
@@ -46,7 +51,9 @@
 /*estilos seccion menu de beneficios*/
 .beneficios-container {
   width: 100%;
-  margin-left: 8em;
+  display: flex;
+  justify-content: center;
+  flex-direction: none;
   padding-top: 1.5em;
 }
 .beneficios-container .beneficios {
@@ -54,6 +61,7 @@
   justify-content: space-between;
   flex-direction: none;
   width: 80%;
+  padding-top: 1em;
   background-color: #EDEDED;
   border-radius: 2em;
   border: 2px solid #212121;
@@ -155,6 +163,12 @@
   }
 }
 /*Fin Queries seccion mas bendido*/
+.productos--container {
+  display: flex;
+  justify-content: center;
+  flex-direction: none;
+}
+
 .h2-container-promo {
   display: flex;
   justify-content: center;
@@ -1141,5 +1155,27 @@ h6 span {
   width: 40%;
   font-size: 0.6em;
 }
+
+/* estilos navbar*/
+.navbar1 {
+  background-color: #ff6961;
+  border-radius: 2em;
+  border: 2px solid #212121;
+}
+
+.registro {
+  margin-left: 3em;
+}
+
+.carrito--logo--style {
+  margin-left: 3em;
+  display: flex;
+}
+.carrito--logo--style .contador--carrito--style {
+  display: flex;
+  font-size: 1.5em;
+}
+
+/*Fin estilos navbar*/
 
 /*# sourceMappingURL=style.css.map */

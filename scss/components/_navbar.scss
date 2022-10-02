@@ -1,4 +1,5 @@
 /* estilos navbar*/
+@import "../base/mixins";
 @import "../base/mapas";
 .navbar1{
     background-color: #ff6961;
@@ -6,11 +7,16 @@
     border: map-get($borders-standard,borders);
 }
 
-.carrito--logo--style{
-display: flex;
-    .contador--carrito--style{
-        display: flex;
-        font-size: 1.5em;
-    
-    }/*Fin estilos navbar*/
+.registro{
+    margin-left: 3em;
 }
+
+.carrito--logo--style{
+    margin-left: 3em;
+    display: flex;
+        .contador--carrito--style{
+            display: flex;
+            font-size: 1.5em;
+        }
+}
+/*Fin estilos navbar*/
