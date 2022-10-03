@@ -47,8 +47,11 @@ let eliminarDelCarrito = (prodid) => {
     const prod = carritoRecuperado.map((prod) => {
       if (prod.id == prodid) {
         prod.cantidad--;
-        HandleJsonStorage(carritoRecuperado);
-        RenderCarrito();
+        setTimeout(() => {
+          prod.precioTotal = prod.precioTotal - prod.precio;
+          HandleJsonStorage(carritoRecuperado);
+          RenderCarrito();
+        }, 0);
         Toastify({
           text: `¡Eliminaste una unidad de ${prod.nombre}!`,
           duration: 2000,
@@ -83,6 +86,11 @@ let agregarProducto = (prodid) => {
     const prod = carritoRecuperado.map((prod) => {
       if (prod.id == prodid) {
         prod.cantidad++;
+        setTimeout(() => {
+          prod.precioTotal = prod.precioTotal + prod.precio;
+          HandleJsonStorage(carritoRecuperado);
+          RenderCarrito();
+        }, 0);
         Toastify({
           text: `¡Agregaste una unidad de ${prod.nombre}!`,
           duration: 2000,
