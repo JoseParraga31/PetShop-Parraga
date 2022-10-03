@@ -25,20 +25,21 @@
     }
 }
 
-.cachorros-container{
+.frase__container{
+    width: 100%;
     margin-top: 2em;
+    @include Flexbox(flex,center, none);
 }
 
-.cachorros{
+.frase{
+    width: 80%;
     background-color: #fdfd96;
-    padding: 3em 3em 3em 3em;
+    padding: 1em 1em 0 1em;
     border-radius: map-get($borders-standard, borders-radious );
     border: map-get($borders-standard,borders);
-
-    .carta1{
-        &:hover{
-            border: #77dd77 0.2em solid;
-        }
+    text-align: center;
+    h2{
+        margin-top: 0.3em;
     }
 }
 /*fin estilos seccion cachorros*/

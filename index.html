@@ -18,6 +18,8 @@
     <meta property="og:url" content="https://lapandilladeoliver.000webhostapp.com/Pages/contacto.html">
     <meta property="og:image" content="https://lapandilladeoliver.000webhostapp.com/src/Multimedia/Images/oliver-pelota.jpeg">
     <link rel="shortcut icon" href="src/Multimedia/Images/favicons/perro-delante-de-un-hombre.png" type="image/x-icon">
+    <!--Tostify-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
     <!--CSS-->
     <link rel="stylesheet" href="CSS/style.css">
     <title>home | Oliver y su Pandilla | El jueguete ideal para tu Perri</title>
@@ -35,7 +37,6 @@
                     <a class="nav-link active links" aria-current="page" href="/index.html">Inicio</a>
                     <a class="nav-link active links" href="Pages/nosotros.html">Nosotros</a>
                     <a class="nav-link active links" href="Pages/contacto.html">Contacto</a>
-                    <a class="nav-link active links" href="Pages/tienda.html">Tienda</a>
                     </div>
                     <div class="col-md-4"></div>
                     <div class="navbar-nav navbar2">
@@ -43,15 +44,11 @@
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Search</button>
                         </form>
-                        <a class="nav-link active links" href="Pages/registro.html">Registrate</a>
-                        <a class="nav-link active links" href="Pages/registro.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                        </svg></a>
-                        <a class="nav-link active links carrito--logo--style" href="Pages/carrito.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                            </svg>
-                            <span class="Contador--carrito contador--carrito--style">0</span>
+                        <a class="nav-link active links registro" href="/Pages/registro.html">
+                                <img src="/src/assets/login.svg" alt="login"></a>
+                        <a class="nav-link active links carrito--logo--style" href="/Pages/carrito.html">
+                            <img src="/src/assets/carrito.svg" alt="carrito">
+                            <span class="contador--carrito--style Contador__carrito--style" id="Contador__carrito">0</span>
                         </a>
                     </div>
                 </div>
@@ -73,14 +70,14 @@
                     </div>
                     <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href=""><img src="src/Multimedia/Images/veterinarios.png" class="d-block w-100 img-fluid" alt="quipo de veterinarios"></a>
+                        <a href=""><img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%221280%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201280%20300%22%20preserveAspectRatio%3D%22none%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%20%20%20%20%20%20%20%20%20%20%23holder%20text%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20fill%3A%20%23ffffff%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-family%3A%20sans-serif%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-size%3A%2040px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-weight%3A%20400%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%3C%2Fstyle%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Cg%20id%3D%22holder%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23d13a60%22%3E%3C%2Frect%3E%0A%20%20%20%20%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctext%20text-anchor%3D%22middle%22%20x%3D%2250%25%22%20y%3D%2250%25%22%20dy%3D%22.3em%22%3E1280%20x%20300%3C%2Ftext%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fsvg%3E" class="d-block w-100 img-fluid" alt="quipo de veterinarios"></a>
                     </div>
                     <div class="carousel-item">
-                        <a href="/Pages/AccesoriosPerro.html"> <img src="src/Multimedia/Images/banner-productos-para-perros.jpeg" class="d-block w-100 img-fluid" alt="Perros">
+                        <a href="#"> <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%221280%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201280%20300%22%20preserveAspectRatio%3D%22none%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%20%20%20%20%20%20%20%20%20%20%23holder%20text%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20fill%3A%20%23ffffff%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-family%3A%20sans-serif%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-size%3A%2040px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-weight%3A%20400%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%3C%2Fstyle%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Cg%20id%3D%22holder%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23d13a60%22%3E%3C%2Frect%3E%0A%20%20%20%20%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctext%20text-anchor%3D%22middle%22%20x%3D%2250%25%22%20y%3D%2250%25%22%20dy%3D%22.3em%22%3E1280%20x%20300%3C%2Ftext%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fsvg%3E" class="d-block w-100 img-fluid" alt="Perros">
                         </a>
                     </div>
                     <div class="carousel-item">
-                        <a href="/Pages/AccesoriosGato.html"><img src="src/Multimedia/Images/banner-productos-gatos.jpeg" class="d-block w-100 img-fluid" alt="Gatos">
+                        <a href="#"><img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%221280%22%20height%3D%22300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201280%20300%22%20preserveAspectRatio%3D%22none%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%20%20%20%20%20%20%20%20%20%20%23holder%20text%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20fill%3A%20%23ffffff%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-family%3A%20sans-serif%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-size%3A%2040px%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-weight%3A%20400%3B%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%3C%2Fstyle%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Cg%20id%3D%22holder%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23d13a60%22%3E%3C%2Frect%3E%0A%20%20%20%20%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctext%20text-anchor%3D%22middle%22%20x%3D%2250%25%22%20y%3D%2250%25%22%20dy%3D%22.3em%22%3E1280%20x%20300%3C%2Ftext%3E%0A%20%20%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%3C%2Fsvg%3E" class="d-block w-100 img-fluid" alt="Gatos">
                         </a>
                     </div>
                     </div>
@@ -100,19 +97,62 @@
         </div>
     </section>  
     <!--Fin Carrusel-->
+        <!--inicio Menu Beneficios-->
+    <section class="beneficios-container">
+        <div class="row beneficios">
+            <div class="col-sm-3 col-md-3 text-center">
+                <!--Icono Suscripcion-->
+                <a href="">
+                    <img src="/src/assets/suscripcion.svg" alt="suscripcion">
+                </a> 
+                <p class="txt-beneficios">Suscribite</p>
+            </div>
+            <div class="col-sm-3 col-md-3 text-center">
+                <!--Incono Relog-->
+                <a href="">
+                    <img src="/src/assets/relog.svg" alt="entrega Express">
+                </a>
+                <p class="txt-beneficios">Entrega Express</p>
+            </div>
+                <div class="col-sm-3 col-md-3 text-center">
+                    <!--Incono Pago-->
+                    <a href="">
+                        <img src="/src/assets/pago.svg" alt="pago">
+                    </a>    
+                    <p class="txt-beneficios">Pagos y Promo </p>
+                </div>
+        </div>
+    </section>      
+        <!--Fin Menu Beneficios-->
+        <div class="container frase__container">
+            <div class="row frase">
+                <h2>
+                    “Mi raza favorita es adoptado”.
+                    <p>(Oliver y su Pandilla)</p>
+                </h2>
+            </div>
+        </div>
     <div class="container titulo-blog titulo-container">
         <h1 class="titulo">
-            Articulos Principales
+            !Conoce Nuestro Blog¡
         </h1>
     </div>
     <!--seccion del Blog-->
     <main class="container blog">
         <!--articulo principal de la seccion blog-->
         <div class="principal">
-            <div class="card" style="width: 100%; height: 100%;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="col-md-4">
+                    <img src="/src/Multimedia/Images/alfombra1.jpg" class="img-fluid" alt="...">
+                </div>
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -124,7 +164,7 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="..." class="img-fluid rounded-start" alt="...">
+                            <img src="/src/Multimedia/Images/oliver-pelota.jpeg" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -142,7 +182,7 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="..." class="img-fluid rounded-start" alt="...">
+                            <img src="/src/Multimedia/Images/Soga3Nudos.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -160,7 +200,7 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="..." class="img-fluid rounded-start" alt="...">
+                            <img src="/src/Multimedia/Images/Soga3Nudos.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -177,7 +217,7 @@
             <div class="texto"><div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
+                        <img src="/src/Multimedia/Images/familia-oliver2.jpeg" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -193,7 +233,7 @@
             <div class="texto"><div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
+                        <img src="/src/Multimedia/Images/bolsaPerros.jpg" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -209,7 +249,7 @@
             <div class="texto"><div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
+                        <img src="/src/Multimedia/Images/pelotaTejida.jpg" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -226,132 +266,24 @@
     </main>
     <!-- fin seccion del Blog-->
     <seccion class="mobile-template">
-        <!--Cachorros-->
-        <section>
-            <div class="row h2-row">
-                <div class="col-sm-12 col-md-12 h2-container">
-                    <h2 class="h2">¿Nuevo Integrante en la Familia?</h2>
-                </div>
-            </div>    
-        </section>
-        <section class=" container cachorros-container"> 
-            <div class="row cachorros">
-                <!--Inicio Imagen Cachorro-->
-                <div class="col-sm-6 col-md-6">
-                    <div class="card carta2">
-                        <a  href="/Pages/AccesoriosPerro.html">
-                            <img src="src/Multimedia/Images/banner-productos-para-perros.jpeg" class="img-fluid" alt="banner-productos-para-perros">
-                        </a>
-                    </div>
-                </div>
-                <!--Fin Imagen Cachorro-->
-                <!--Inicio Imagen gatito-->
-                <div class="col-sm-6 col-md-6">
-                    <div class="card carta2"><a href="/Pages/AccesoriosGato.html">
-                        <img src="src/Multimedia/Images/banner-productos-gatos.jpeg" class="img-fluid" alt="banner-productos-gatos">
-                    </a>
-                    </div>
-                </div>
-            <!--Fin Imagen gatito-->
-            </div>    
-        </section>
         <!--Productos Mas Buscados-->
         <section class="container productos-seccion">
                 <div class="col-sm-12 col-md-12 h2-container">
-                    <h2 class="h2">!Productos y Promociones¡</h2>
+                    <h2 class="h2">!Lo mejor para tu Perri¡</h2>
                 </div>
-        
-                <div class="row productos1">
-                    <!--producto01-->
-                        <div class="card carta1" style="width: 14rem;">
-                            <img src="/src/Multimedia/Images/AccesoriosGato/CanCatGatoConPlumaParaGato.jpeg" class="card-img-top" alt="juguetes con plumas para gatos">
-                            <div class="card-body">
-                            <h6 class="card-title">Can Cat Gato Con Pluma Para Gato</h6>
-                            <p class="font-text">100% diversion. Antistress</p>
-                            <a href="#" class="btn boton1">Agregar al carrito</a>
-                            </div>
-                        </div>
-                        <div class="card carta1" style="width: 14rem;">
-                            <img src="/src/Multimedia/Images/AccesoriosGato/CanCatRatónSuaveConColaParaGato.jpeg" class="card-img-top" alt="raton suave para gato">
-                            <div class="card-body">
-                            <h6 class="card-title">Can Cat Ratón Suave Con Cola Para Gato</h6>
-                            <p class="font-text">Can Cat Ojito Plush Con Plumas mantiene activos a nuestros gatos, pudiendo mejorar su salud y reducir su stress</p>
-                            <a href="#" class="btn boton1">Agregar al carrito</a>
-                            </div>
-                        </div> 
-                    <!--fin producto01-->
-                    <!--peoducto02-->
-                        <div class="card carta1" style="width: 14rem;">
-                            <img src="/src/Multimedia/Images/AccesoriosPerro/EarthRatedBolsaDesperdicio.jpeg" class="card-img-top" alt="abrigo stars war perro">
-                            <div class="card-body">
-                            <h6 class="card-title">Earth Rated Bolsa Desperdicio</h6>
-                            <p class="font-text">Bolsas Bio-degradables Earth Rated
-                                Bolsas extra largas y extra fuertes para proteger sus manos.</p>
-                            <a href="#" class="btn boton1">Agregar al carrito</a>
-                            </div>
-                        </div>  
-                    <!--fin producto02-->
-                    <!--producto03-->
-                    
-                        <div class="card carta1" style="width: 14rem;">
-                            <img src="/src/Multimedia/Images/AccesoriosPerro/EarthRatedBolsaDispenser.jpeg" class="card-img-top" alt="arnes para perro">
-                            <div class="card-body">
-                            <h6 class="card-title">Earth Rated Bolsa + Dispenser</h6>
-                            <p class="font-text">Dispensador de Correa con 15 Bolsas Biodegradables</p>
-                            <a href="#" class="btn boton1">Agregar al carrito</a>
-                        </div>
-                    <!--fin producto03-->
+            <section  class="productos--container">
+                <div class="container col-md-12">
+                    <div  id="Productos_container" class="row productos1"></div>
                 </div>
-        </section> 
-        <!--inicio Menu Beneficios-->
-        <section class=" beneficios-container">
-            <div class="row beneficios d-flex">
-                <div class="col-sm-3 col-md-3 text-center">
-                    <!--Icono Suscripcion-->
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-repeat icono-bene" viewBox="0 0 16 16">
-                                <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
-                                <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
-                            </svg>
-                        </a> 
-                        <p class="txt-beneficios">Suscribite</p>
-                </div>
-                <div class="col-sm-3 col-md-3 text-center">
-                    <!--Incono Relog-->
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-clock-history icono-bene" viewBox="0 0 16 16">
-                                <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
-                                <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
-                                <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
-                            </svg>
-                        </a>
-                        <p class="txt-beneficios">Entrega Express</p>
-                </div>
-                <div class="col-sm-3 col-md-3 text-center">
-                        <!--Incono Pago-->
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-coin icono-bene" viewBox="0 0 16 16">
-                                <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
-                            </svg>
-                        </a>    
-                        <p class="txt-beneficios">Pagos y Promo </p>
-                </div>
-                <div class="col-sm-3 col-md-3 text-center">
-                        <!--Icono Casa-->
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-house-heart icono-bene" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.707L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.646a.5.5 0 0 0 .708-.707L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207l-5-5-5 5V13.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7.207Zm-5-.225C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.309 8 6.982Z"/>
-                            </svg>
-                        </a>
-                        <p class="txt-beneficios">Retiro Gratis en Sucursal</p>
-                </div>
-            </div>
-        </section>      
-        <!--Fin Menu Beneficios-->
-    </seccion>   
-    <!--Fin Productos Mas Buscados-->
+            </section>
+        </section>   
+    </section>
+    <div class="contenedor__BtnCarrito--style-none">
+        <a class=" btn BtnCarrito--style" href="/Pages/carrito.html">
+            <img src="/src/assets/carrito.svg" alt="carrito">
+            <span class="contador--carrito--style Contador__carrito--style" id="Contador__carrito1">0</span>
+        </a>
+    </div>
     <footer>
         <!--Redes Sociales-->
         <div class="container d-flex justify-content-between">
@@ -404,7 +336,10 @@
             </div>
         </div>    
     </footer>
+    <!-- JavaScript Tostify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="/Js/ProductosJs.js"></script>
 </body> 
 </html>

@@ -1,203 +1,9 @@
-// const stockPerroAccesorio = [
-//   {
-//     categoria: 'Perro',
-//     nombre: 'Can Cat Monstruos Peluche Para Perros',
-//     descripcion: 'Peluche con cuerpo forrado con silicona',
-//     img: '/src/Multimedia/Images/AccesoriosPerro/CanCatMonstruosPelucheParaPerros.jpeg',
-//     precio: 2500,
-//     cantidad: 1,
-//     stock: 12,
-//     subcategoria: 'Accesorios',
-//     id: '1',
-//   },
-
-//   {
-//     categoria: 'Perro',
-//     nombre: 'Dixon Arnés para Perro Minnie',
-//     descripcion: 'Arnés para perro Minnie ajustable.',
-//     img: '/src/Multimedia/Images/AccesoriosPerro/DixonArnésparaPerroMinnie.jpeg',
-//     precio: 2000,
-//     cantidad: 1,
-//     stock: 20,
-//     subcategoria: 'Accesorios',
-//     id: '2',
-//   },
-
-//   {
-//     categoria: 'Perro',
-//     nombre: 'Dixon Correa Minnie',
-//     descripcion: 'Resistente gracias a la doble capa de nylon. Anilla en zona del agarre: útil para dispensador bolsas de caca.',
-//     img: '/src/Multimedia/Images/AccesoriosPerro/DixonCorreaMinnie.jpeg',
-//     precio: 2000,
-//     cantidad: 1,
-//     stock: 20,
-//     subcategoria: 'Accesorios',
-//     id: '3',
-//   },
-
-//   {
-//     categoria: 'Perro',
-//     nombre: 'Earth Rated Bolsa Desperdicio',
-//     descripcion: 'Bolsas Bio-degradables Earth Rated Bolsas extra largas y extra fuertes para proteger sus manos.',
-//     img: '/src/Multimedia/Images/AccesoriosPerro/EarthRatedBolsaDesperdicio.jpeg',
-//     precio: 1200,
-//     cantidad: 1,
-//     stock: 50,
-//     subcategoria: 'Accesorios',
-//     id: '4',
-//   },
-//   {
-//     categoria: 'Perro',
-//     nombre: 'Can Cat Monstruos Peluche Para Perros',
-//     descripcion: 'Peluche con cuerpo forrado con silicona',
-//     img: '/src/Multimedia/Images/AccesoriosPerro/CanCatMonstruosPelucheParaPerros.jpeg',
-//     precio: 2500,
-//     cantidad: 1,
-//     stock: 12,
-//     subcategoria: 'Accesorios',
-//     id: '5',
-//   },
-
-//   {
-//     categoria: 'Perro',
-//     nombre: 'Dixon Arnés para Perro Minnie',
-//     descripcion: 'Arnés para perro Minnie ajustable.',
-//     img: '/src/Multimedia/Images/AccesoriosPerro/DixonArnésparaPerroMinnie.jpeg',
-//     precio: 2000,
-//     cantidad: 1,
-//     stock: 20,
-//     subcategoria: 'Accesorios',
-//     id: '6',
-//   },
-
-//   {
-//     categoria: 'Perro',
-//     nombre: 'Dixon Correa Minnie',
-//     descripcion: 'Resistente gracias a la doble capa de nylon. Anilla en zona del agarre: útil para dispensador bolsas de caca.',
-//     img: '/src/Multimedia/Images/AccesoriosPerro/DixonCorreaMinnie.jpeg',
-//     precio: 2000,
-//     cantidad: 1,
-//     stock: 20,
-//     subcategoria: 'Accesorios',
-//     id: '7',
-//   },
-
-//   {
-//     categoria: 'Perro',
-//     nombre: 'Earth Rated Bolsa Desperdicio',
-//     descripcion: 'Bolsas Bio-degradables Earth Rated Bolsas extra largas y extra fuertes para proteger sus manos.',
-//     img: '/src/Multimedia/Images/AccesoriosPerro/EarthRatedBolsaDesperdicio.jpeg',
-//     precio: 1200,
-//     cantidad: 1,
-//     stock: 50,
-//     subcategoria: 'Accesorios',
-//     id: '8',
-//   },
-
-//   {
-//     categoria: 'Perro',
-//     nombre: 'Can Cat Monstruos Peluche Para Perros',
-//     descripcion: 'Peluche con cuerpo forrado con silicona',
-//     img: '/src/Multimedia/Images/AccesoriosPerro/CanCatMonstruosPelucheParaPerros.jpeg',
-//     precio: 2500,
-//     cantidad: 1,
-//     stock: 12,
-//     subcategoria: 'Accesorios',
-//     id: '9',
-//   },
-
-//   {
-//     categoria: 'Perro',
-//     nombre: 'Dixon Arnés para Perro Minnie',
-//     descripcion: 'Arnés para perro Minnie ajustable.',
-//     img: '/src/Multimedia/Images/AccesoriosPerro/DixonArnésparaPerroMinnie.jpeg',
-//     precio: 2000,
-//     cantidad: 1,
-//     stock: 20,
-//     subcategoria: 'Accesorios',
-//     id: '10',
-//   },
-
-//   {
-//     categoria: 'Perro',
-//     nombre: 'Dixon Correa Minnie',
-//     descripcion: 'Resistente gracias a la doble capa de nylon. Anilla en zona del agarre: útil para dispensador bolsas de caca.',
-//     img: '/src/Multimedia/Images/AccesoriosPerro/DixonCorreaMinnie.jpeg',
-//     precio: 2000,
-//     cantidad: 1,
-//     stock: 20,
-//     subcategoria: 'Accesorios',
-//     id: '11',
-//   },
-
-//   {
-//     categoria: 'Perro',
-//     nombre: 'Earth Rated Bolsa Desperdicio',
-//     descripcion: 'Bolsas Bio-degradables Earth Rated Bolsas extra largas y extra fuertes para proteger sus manos.',
-//     img: '/src/Multimedia/Images/AccesoriosPerro/EarthRatedBolsaDesperdicio.jpeg',
-//     precio: 1200,
-//     cantidad: 1,
-//     stock: 50,
-//     subcategoria: 'Accesorios',
-//     id: '12',
-//   },
-
-//   {
-//     categoria: 'Perro',
-//     nombre: 'Can Cat Monstruos Peluche Para Perros',
-//     descripcion: 'Peluche con cuerpo forrado con silicona',
-//     img: '/src/Multimedia/Images/AccesoriosPerro/CanCatMonstruosPelucheParaPerros.jpeg',
-//     precio: 2500,
-//     cantidad: 1,
-//     stock: 12,
-//     subcategoria: 'Accesorios',
-//     id: '13',
-//   },
-
-//   {
-//     categoria: 'Perro',
-//     nombre: 'Dixon Arnés para Perro Minnie',
-//     descripcion: 'Arnés para perro Minnie ajustable.',
-//     img: '/src/Multimedia/Images/AccesoriosPerro/DixonArnésparaPerroMinnie.jpeg',
-//     precio: 2000,
-//     cantidad: 1,
-//     stock: 20,
-//     subcategoria: 'Accesorios',
-//     id: '14',
-//   },
-
-//   {
-//     categoria: 'Perro',
-//     nombre: 'Dixon Correa Minnie',
-//     descripcion: 'Resistente gracias a la doble capa de nylon. Anilla en zona del agarre: útil para dispensador bolsas de caca.',
-//     img: '/src/Multimedia/Images/AccesoriosPerro/DixonCorreaMinnie.jpeg',
-//     precio: 2000,
-//     cantidad: 1,
-//     stock: 20,
-//     subcategoria: 'Accesorios',
-//     id: '15',
-//   },
-
-//   {
-//     categoria: 'Perro',
-//     nombre: 'Earth Rated Bolsa Desperdicio',
-//     descripcion: 'Bolsas Bio-degradables Earth Rated Bolsas extra largas y extra fuertes para proteger sus manos.',
-//     img: '/src/Multimedia/Images/AccesoriosPerro/EarthRatedBolsaDesperdicio.jpeg',
-//     precio: 1200,
-//     cantidad: 1,
-//     stock: 50,
-//     subcategoria: 'Accesorios',
-//     id: '16',
-//   },
-// ];
-
 // let stockPerroAccesorioJson = JSON.stringify(stockPerroAccesorio)
 // console.log(stockPerroAccesorioJson);
 let productosContainer = document.querySelector('#Productos_container');
 let contadorCarrito = document.querySelector('#Contador__carrito');
-console.log(contadorCarrito.innerHTML);
+let contadorCarrito1 = document.querySelector('#Contador__carrito1');
 let carrito = [];
-
 // Funciones
 //funcion para parcear a json y enviar el array al localStorage
 const HandleJsonStorage = (array) => {
@@ -211,26 +17,41 @@ const agregarAlCarrito = (prodId) => {
     const prod = carrito.map((prod) => {
       if (prod.id === prodId) {
         prod.cantidad++;
+        Toastify({
+          text: `¡Agregaste ${prod.nombre} al carrito!`,
+          duration: 1000,
+          gravity: 'top',
+          position: 'right',
+          style: {
+            background: '#ff6961',
+          },
+        }).showToast();
+        setTimeout(() => {
+          prod.precioTotal = prod.precioTotal + prod.precio;
+          HandleJsonStorage(carrito);
+        }, 0);
       }
     });
   } else {
     fetch('/data.json')
       .then((res) => res.json())
       .then((json) => {
-        console.log(json);
         const item = json.find((prod) => prod.id === prodId);
         carrito.push(item);
+        setTimeout(() => {
+          HandleJsonStorage(carrito);
+        }, 0);
+        Toastify({
+          text: `¡Agregaste ${item.nombre} al carrito!`,
+          duration: 1000,
+          gravity: 'top',
+          position: 'right',
+          style: {
+            background: '#ff6961',
+          },
+        }).showToast();
       });
   }
-  Toastify({
-    text: '¡Agregaste un producto al carrito!',
-    duration: 1000,
-    gravity: 'top',
-    position: 'right',
-    style: {
-      background: '#ff6961',
-    },
-  }).showToast();
 };
 
 // fin Funciones
@@ -244,14 +65,14 @@ const RenderProd = () => {
         div.classList.add('card');
         div.classList.add('carta1');
         div.innerHTML = `
-    <img src="${Producto.img}"class="card-img-top img_card" alt="#">
+          <img src="${Producto.img}"class="card-img-top img_card" alt="#">
           <div class="card-body">
           <h6 class="card-title">${Producto.nombre}</h6>
           <p class="font-text">${Producto.descripcion}</p>
           <p>Precio:${Producto.precio}$</p>
-          <a href="#" class="btn btn-primary" id="agregar${Producto.id}">Agregar al carrito</a>
+          <a class="btn btn-primary" id="agregar${Producto.id}">Agregar al carrito</a>
           </div>
-      `;
+          `;
         //agregamos el div creado a la variable del selector, en este caso productos container
         productosContainer.appendChild(div);
 
@@ -259,10 +80,15 @@ const RenderProd = () => {
         const boton = document.querySelector(`#agregar${Producto.id}`);
         boton.addEventListener('click', () => {
           agregarAlCarrito(Producto.id);
-          console.log(carrito);
           setTimeout(() => {
-            HandleJsonStorage(carrito);
-          }, 0500);
+            let carritoRecuperado = localStorage.getItem('CarritoJson');
+            carritoRecuperado = JSON.parse(carritoRecuperado);
+            console.log(carritoRecuperado);
+            if (carritoRecuperado.length > 0) {
+              contadorCarrito.innerHTML = carritoRecuperado.length;
+              contadorCarrito1.innerHTML = contadorCarrito.innerHTML;
+            }
+          }, 1000);
         });
       });
     })
@@ -270,9 +96,4 @@ const RenderProd = () => {
       console.log(e);
     });
 };
-let carritoRecuperado1 = localStorage.getItem('CarritoJson');
-carritoRecuperado1 = JSON.parse(carritoRecuperado1);
-
-contadorCarrito.innerHTML = carritoRecuperado1.length;
-
 RenderProd();

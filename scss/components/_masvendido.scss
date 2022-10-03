@@ -1,67 +1,99 @@
 /* estilos seccion mas vendido*/
-    /* Queries seccion mas bendido*/
-@media screen  and (max-width: 490px){
-    .mobile-template{
-        display:flex;
-        .beneficios-container{
-            width: 20%;
-            @include Flexbox(flex,space-between,column);
-            margin-top: 4em;
-            margin-left: 0 !important;
-            
-            .beneficios{
-                width: 100%;
-                height: 60%;
-                margin-top: 15em;
-            }
-        } 
-        
-        .cachorros-container{
-            display: none !important;
-        }
-        .productos-seccion{
-            width: 75%;
-            .productos1{
-                width: 100%;
-                background-color: #84b6f4;
-                border-radius: map-get($borders-standard, borders-radious );
-                @include Flexbox(flex,center,column);
-                
-            }
-        } 
-    }  
-}
- /*Fin Queries seccion mas bendido*/   
-    
-.h2-container-promo{
-    @include Flexbox(flex,center, none);
-    @extend %espacio;                                                                                                              
-}
-    .productos1{
-        margin-top: 2em;
-        background-color: #84b6f4;
-        padding: 3em 3em 3em 3em;
-        border-radius: map-get($borders-standard, borders-radious );
-        border: map-get($borders-standard,borders);
-        @include Flexbox(flex,space-between, none);
-    
-        
-        }
+/* Queries seccion mas bendido*/
+@media screen and (max-width: 490px) {
+  .mobile-template {
+    display: flex;
+    .beneficios-container {
+      width: 20%;
+      @include Flexbox(flex, space-between, column);
+      margin-top: 4em;
+      margin-left: 0 !important;
 
-    .carta2{
-        &:hover{
-            border: #77dd77 0.2em solid;
-            box-shadow: 0 8px 12px 0 rgb(21 21 21);
-            
-        }
-    }  
-    .boton1{
-        width: 5em;
+      .beneficios {
+        width: 100%;
+        height: 60%;
+        margin-top: 15em;
+      }
+    }
+
+    .cachorros-container {
+      display: none !important;
+    }
+    .productos-seccion {
+      width: 75%;
+      .productos1 {
+        width: 100%;
         background-color: #84b6f4;
-        border-radius: 0.5em;
-        box-shadow: 0 4px 8px 0 rgb(21 21 21);
-        &:hover{
-            background-color:#9ec6f8;
-        }
-    }   
+        border-radius: map-get($borders-standard, borders-radious);
+        @include Flexbox(flex, center, column);
+      }
+    }
+  }
+}
+/*Fin Queries seccion mas bendido*/
+.productos--container {
+  @include Flexbox(flex, center, none);
+}
+
+.h2-container-promo {
+  @include Flexbox(flex, center, none);
+  @extend %espacio;
+}
+.productos1 {
+  width: 100%;
+  margin-top: 2em;
+  margin-left: 0.1em;
+  background-color: #84b6f4;
+  padding: 3em 3em 3em 3em;
+  border-radius: map-get($borders-standard, borders-radious);
+  border: map-get($borders-standard, borders);
+  @include Flexbox(flex, space-between, none);
+}
+.contenedor__BtnCarrito--style-none{
+    display: none;
+}                                                               
+    
+    .contenedor__BtnCarrito--style{
+        display: inline-block;
+    }
+    .BtnCarrito--style {
+        @include Flexbox(flex, center, none);
+        width: 3em;
+      padding: 10em;
+      background-color: #ff6961;
+      padding: 0.5em;
+      border-radius: 2em;
+      border: map-get($borders-standard, borders);
+      font-size: 1.5em;
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      z-index: 1000px;
+      position: fixed;
+      top: 50%;
+      left: 92%;
+          &:hover {
+              background-color: #ff696100;
+              }
+          &:active {
+              font-size: 1.8em;
+              }
+  }
+
+
+.carta2 {
+  &:hover {
+    border: #77dd77 0.2em solid;
+    box-shadow: 0 8px 12px 0 rgb(21 21 21);
+  }
+}
+.boton1 {
+  width: 5em;
+  background-color: #84b6f4;
+  border-radius: 0.5em;
+  box-shadow: 0 4px 8px 0 rgb(21 21 21);
+  &:hover {
+    background-color: #9ec6f8;
+  }
+}
+
 /*Fin estilos seccion mas vendido*/
